@@ -7,6 +7,7 @@
 
 import Foundation
 
+// translate numbers to text in various languages
 public class Translator {
     public enum SpanishPuntoComma: String, CaseIterable {
         case coma
@@ -22,9 +23,12 @@ public class Translator {
         case lẻ
     }
 
-    
+   
+    // the name of the language
     public var name: String { implementation.name }
+    // the optional english name of the language
     public var englishName: String? { implementation.englishName }
+    // the code of the language, which is used to find a voice
     public var code: String? { implementation.code }
     public var groupSize: Int { implementation.groupSize }
     public func translate(_ s: String) -> String { implementation.translate(s) }
