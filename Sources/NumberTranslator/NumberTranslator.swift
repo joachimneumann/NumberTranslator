@@ -1,6 +1,6 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
-public func hello() -> String {
-    "Hello"    
+public struct Hello {
+    let hello = "hello"
 }
