@@ -38,7 +38,7 @@ public class Translator {
         self.implementation = implementation
     }
     
-    var germanCapitalisation: Bool {
+    public var germanCapitalisation: Bool {
         get {
             if let selfWithProtocol = self.implementation as? GermanParameterProtocol {
                 selfWithProtocol.germanCapitalisation
