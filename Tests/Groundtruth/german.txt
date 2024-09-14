@@ -1,0 +1,174 @@
+SETTINGS germanCapitalisation false
+0 null
+1 eins
+2 zwei
+3 drei
+4 vier
+5 fünf
+6 sechs
+7 sieben
+8 acht
+9 neun
+10 zehn
+11 elf
+12 zwölf
+13 dreizehn
+14 vierzehn
+15 fünfzehn
+16 sechzehn
+17 siebzehn
+18 achtzehn
+19 neunzehn
+20 zwanzig
+21 einundzwanzig
+24 vierundzwanzig
+25 fünfundzwanzig
+27 siebenundzwanzig
+28 achtundzwanzig
+29 neunundzwanzig
+30 dreißig
+31 einunddreißig
+32 zweiunddreißig
+33 dreiunddreißig
+34 vierunddreißig
+35 fünfunddreißig
+36 sechsunddreißig
+37 siebenunddreißig
+38 achtunddreißig
+39 neununddreißig
+40 vierzig
+41 einundvierzig
+42 zweiundvierzig
+43 dreiundvierzig
+44 vierundvierzig
+45 fünfundvierzig
+46 sechsundvierzig
+47 siebenundvierzig
+48 achtundvierzig
+49 neunundvierzig
+50 fünfzig
+51 einundfünfzig
+52 zweiundfünfzig
+53 dreiundfünfzig
+54 vierundfünfzig
+55 fünfundfünfzig
+56 sechsundfünfzig
+57 siebenundfünfzig
+58 achtundfünfzig
+59 neunundfünfzig
+60 sechzig
+61 einundsechzig
+62 zweiundsechzig
+63 dreiundsechzig
+64 vierundsechzig
+65 fünfundsechzig
+66 sechsundsechzig
+67 siebenundsechzig
+68 achtundsechzig
+69 neunundsechzig
+70 siebzig
+71 einundsiebzig
+72 zweiundsiebzig
+73 dreiundsiebzig
+74 vierundsiebzig
+75 fünfundsiebzig
+76 sechsundsiebzig
+77 siebenundsiebzig
+78 achtundsiebzig
+79 neunundsiebzig
+80 achtzig
+81 einundachtzig
+82 zweiundachtzig
+83 dreiundachtzig
+84 vierundachtzig
+85 fünfundachtzig
+86 sechsundachtzig
+87 siebenundachtzig
+88 achtundachtzig
+89 neunundachtzig
+90 neunzig
+91 einundneunzig
+92 zweiundneunzig
+93 dreiundneunzig
+94 vierundneunzig
+95 fünfundneunzig
+96 sechsundneunzig
+97 siebenundneunzig
+98 achtundneunzig
+99 neunundneunzig
+100 einhundert
+101 einhunderteins
+102 einhundertzwei
+103 einhundertdrei
+104 einhundertvier
+105 einhundertfünf
+106 einhundertsechs
+107 einhundertsieben
+108 einhundertacht
+109 einhundertneun
+110 einhundertzehn
+111 einhundertelf
+112 einhundertzwölf
+113 einhundertdreizehn
+119 einhundertneunzehn
+120 einhundertzwanzig
+121 einhunderteinundzwanzig
+190 einhundertneunzig
+444 vierhundertvierundvierzig
+999 neunhundertneunundneunzig
+1_000 eintausend
+1_001 eintausendeins
+1_005 eintausendfünf
+1_009 eintausendneun
+1_010 eintausendzehn
+1_011 eintausendelf
+1_012 eintausendzwölf
+1_015 eintausendfünfzehn
+1_035 eintausendfünfunddreißig
+1_099 eintausendneunundneunzig
+1_100 eintausendeinhundert
+1_101 eintausendeinhunderteins
+1_105 eintausendeinhundertfünf
+1_110 eintausendeinhundertzehn
+1_111 eintausendeinhundertelf
+1_115 eintausendeinhundertfünfzehn
+1_121 eintausendeinhunderteinundzwanzig
+1_125 eintausendeinhundertfünfundzwanzig
+2_000 zweitausend
+2_101 zweitausendeinhunderteins
+2_301 zweitausenddreihunderteins
+10_000 zehntausend
+10_001 zehntausendeins
+20_001 zwanzigtausendeins
+20_010 zwanzigtausendzehn
+20_101 zwanzigtausendeinhunderteins
+201_001 zweihunderteintausendeins
+502_305 fünfhundertzweitausenddreihundertfünf
+999_999 neunhundertneunundneunzigtausendneunhundertneunundneunzig
+1_000_000 eine Million
+1_000_050 eine Million und fünfzig
+62_000_000 zweiundsechzig Millionen
+62_003_005 zweiundsechzig Millionen und dreitausendfünf
+62_003_105 zweiundsechzig Millionen und dreitausendeinhundertfünf
+62_003_155 zweiundsechzig Millionen und dreitausendeinhundertfünfundfünfzig
+1_000_000_000 eine Milliarde
+1_000_000_003 eine Milliarde und drei
+99_000_000_909 neunundneunzig Milliarden und neunhundertneun
+1_000_000_000_000 eine Billion
+1_000_000_000_003 eine Billion drei
+1_000_000_003_000 eine Billion dreitausend
+1_000_000_003_003 eine Billion dreitausenddrei
+1_000_003_000_000 eine Billion drei Millionen
+1_000_003_003_000 eine Billion drei Millionen und dreitausend
+1_003_000_000_000 eine Billion drei Milliarden
+1_003_003_003_003 eine Billion drei Milliarden und drei Millionen und dreitausenddrei
+-1 minus eins
+-15 minus fünfzehn
+-12.334 minus zwölf Komma drei drei vier
+
+SETTINGS germanCapitalisation true
+0 Null
+1 Eins
+2 Zwei
+20_101 Zwanzigtausendeinhunderteins
+62_003_155 Zweiundsechzig Millionen und Dreitausendeinhundertfünfundfünfzig

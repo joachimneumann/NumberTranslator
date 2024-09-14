@@ -1,0 +1,102 @@
+1 u
+2 dos
+3 tres
+4 quatre
+5 cinc
+6 sis
+7 set
+8 vuit
+9 nou
+10 deu
+11 onze
+12 dotze
+13 tretze
+14 catorze
+15 quinze
+16 setze
+17 disset
+18 divuit
+19 dinou
+20 vint
+21 vint-i-u
+22 vint-i-dos
+23 vint-i-tres
+24 vint-i-quatre
+25 vint-i-cinc
+26 vint-i-sis
+27 vint-i-set
+28 vint-i-vuit
+29 vint-i-nou
+30 trenta
+31 trenta-u
+32 trenta-dos
+33 trenta-tres
+34 trenta-quatre
+35 trenta-cinc
+36 trenta-sis
+37 trenta-set
+38 trenta-vuit
+39 trenta-nou
+40 quaranta
+41 quaranta-u
+50 cinquanta
+60 seixanta
+70 setanta
+80 vuitanta
+90 noranta
+100 cent
+101 cent u
+102 cent dos
+103 cent tres
+104 cent quatre
+105 cent cinc
+144 cent quaranta-quatre
+200 dos-cents
+300 tres-cents
+400 quatre-cents
+500 cinc-cents
+600 sis-cents
+700 set-cents
+800 vuit-cents
+900 nou-cents
+1_000 mil
+2_000 dos mil
+3_000 tres mil
+3_001 tres mil u
+6_000 sis mil
+6_001 sis mil u
+10_000 deu mil
+11_001 onze mil u
+12_895 dotze mil vuit-cents noranta-cinc
+12_786 dotze mil set-cents vuitanta-sis
+70_000 setanta mil
+187_372 cent vuitanta-set mil tres-cents setanta-dos
+200_000 dos-cents mil
+280_065 dos-cents vuitanta mil seixanta-cinc
+706_210 set-cents sis mil dos-cents deu
+100_000 cent mil
+1_000_000 un milió
+1_000_050 un milió cinquanta
+3_000_100 tres milions cent
+10_000_000 deu milions
+40_000_000 quaranta milions
+100_000_000 cent milions
+500_000_000 cinc-cents milions
+1_000_000_000 mil milions
+1_000_000_200 mil milions dos-cents
+10_000_000_000 deu mil milions
+20_000_000_700 vint mil milions set-cents
+100_000_000_000 cent mil milions
+400_000_000_000 quatre-cents mil milions
+1_000_000_000_000 un bilió
+999_000_000_000_000 nou-cents noranta-nou bilions
+
+-1 menys u
+-1, menys u
+1.5 u coma cinc
+-1.5 menys u coma cinc
+-1.51 menys u coma cinc u
+-0.7 menys zero coma set
+-1.5 menys u coma cinc
+-74 menys setanta-quatre
+-1_000_000 menys un milió

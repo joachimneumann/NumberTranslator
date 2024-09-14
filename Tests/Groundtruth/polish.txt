@@ -1,0 +1,280 @@
+0 zero
+1 jeden
+2 dwa
+3 trzy
+4 cztery
+5 pięć
+6 sześć
+7 siedem
+8 osiem
+9 dziewięć
+10 dziesięć
+11 jedenaście
+12 dwanaście
+13 trzynaście
+14 czternaście
+15 piętnaście
+16 szesnaście
+17 siedemnaście
+18 osiemnaście
+19 dziewiętnaście
+20 dwadzieścia
+21 dwadzieścia jeden
+22 dwadzieścia dwa
+23 dwadzieścia trzy
+24 dwadzieścia cztery
+25 dwadzieścia pięć
+26 dwadzieścia sześć
+27 dwadzieścia siedem
+28 dwadzieścia osiem
+29 dwadzieścia dziewięć
+30 trzydzieści
+31 trzydzieści jeden
+32 trzydzieści dwa
+33 trzydzieści trzy
+34 trzydzieści cztery
+35 trzydzieści pięć
+36 trzydzieści sześć
+37 trzydzieści siedem
+38 trzydzieści osiem
+39 trzydzieści dziewięć
+40 czterdzieści
+41 czterdzieści jeden
+42 czterdzieści dwa
+43 czterdzieści trzy
+44 czterdzieści cztery
+45 czterdzieści pięć
+46 czterdzieści sześć
+47 czterdzieści siedem
+48 czterdzieści osiem
+49 czterdzieści dziewięć
+50 pięćdziesiąt
+51 pięćdziesiąt jeden
+52 pięćdziesiąt dwa
+53 pięćdziesiąt trzy
+54 pięćdziesiąt cztery
+55 pięćdziesiąt pięć
+56 pięćdziesiąt sześć
+57 pięćdziesiąt siedem
+58 pięćdziesiąt osiem
+59 pięćdziesiąt dziewięć
+60 sześćdziesiąt
+61 sześćdziesiąt jeden
+62 sześćdziesiąt dwa
+63 sześćdziesiąt trzy
+64 sześćdziesiąt cztery
+65 sześćdziesiąt pięć
+66 sześćdziesiąt sześć
+67 sześćdziesiąt siedem
+68 sześćdziesiąt osiem
+69 sześćdziesiąt dziewięć
+70 siedemdziesiąt
+71 siedemdziesiąt jeden
+72 siedemdziesiąt dwa
+73 siedemdziesiąt trzy
+74 siedemdziesiąt cztery
+75 siedemdziesiąt pięć
+76 siedemdziesiąt sześć
+77 siedemdziesiąt siedem
+78 siedemdziesiąt osiem
+79 siedemdziesiąt dziewięć
+80 osiemdziesiąt
+81 osiemdziesiąt jeden
+82 osiemdziesiąt dwa
+83 osiemdziesiąt trzy
+84 osiemdziesiąt cztery
+85 osiemdziesiąt pięć
+86 osiemdziesiąt sześć
+87 osiemdziesiąt siedem
+88 osiemdziesiąt osiem
+89 osiemdziesiąt dziewięć
+90 dziewięćdziesiąt
+91 dziewięćdziesiąt jeden
+92 dziewięćdziesiąt dwa
+93 dziewięćdziesiąt trzy
+94 dziewięćdziesiąt cztery
+95 dziewięćdziesiąt pięć
+96 dziewięćdziesiąt sześć
+97 dziewięćdziesiąt siedem
+98 dziewięćdziesiąt osiem
+99 dziewięćdziesiąt dziewięć
+100 sto
+101 sto jeden
+102 sto dwa
+103 sto trzy
+104 sto cztery
+105 sto pięć
+106 sto sześć
+107 sto siedem
+108 sto osiem
+109 sto dziewięć
+110 sto dziesięć
+111 sto jedenaście
+112 sto dwanaście
+113 sto trzynaście
+114 sto czternaście
+115 sto piętnaście
+116 sto szesnaście
+117 sto siedemnaście
+118 sto osiemnaście
+119 sto dziewiętnaście
+120 sto dwadzieścia
+121 sto dwadzieścia jeden
+190 sto dziewięćdziesiąt
+200 dwieście
+221 dwieście dwadzieścia jeden
+300 trzysta
+321 trzysta dwadzieścia jeden
+400 czterysta
+444 czterysta czterdzieści cztery
+500 pięćset
+544 pięćset czterdzieści cztery
+600 sześćset
+644 sześćset czterdzieści cztery
+700 siedemset
+744 siedemset czterdzieści cztery
+800 osiemset
+844 osiemset czterdzieści cztery
+900 dziewięćset
+944 dziewięćset czterdzieści cztery
+999 dziewięćset dziewięćdziesiąt dziewięć
+
+1_000 tysiąc
+1_001 tysiąc jeden
+1_005 tysiąc pięć
+1_009 tysiąc dziewięć
+1_010 tysiąc dziesięć
+1_011 tysiąc jedenaście
+1_012 tysiąc dwanaście
+1_015 tysiąc piętnaście
+1_035 tysiąc trzydzieści pięć
+1_099 tysiąc dziewięćdziesiąt dziewięć
+1_100 tysiąc sto
+1_101 tysiąc sto jeden
+1_105 tysiąc sto pięć
+1_110 tysiąc sto dziesięć
+1_111 tysiąc sto jedenaście
+1_115 tysiąc sto piętnaście
+1_121 tysiąc sto dwadzieścia jeden
+1_125 tysiąc sto dwadzieścia pięć
+2_000 dwa tysiące
+2_600 dwa tysiące sześćset
+3_000 trzy tysiące
+4_000 cztery tysiące
+5_000 pięć tysięcy
+6_000 sześć tysięcy
+7_000 siedem tysięcy
+8_000 osiem tysięcy
+9_000 dziewięć tysięcy
+10_000 dziesięć tysięcy
+10_001 dziesięć tysięcy jeden
+11_000 jedenaście tysięcy
+12_000 dwanaście tysięcy
+13_000 trzynaście tysięcy
+14_000 czternaście tysięcy
+15_000 piętnaście tysięcy
+16_000 szesnaście tysięcy
+17_000 siedemnaście tysięcy
+18_000 osiemnaście tysięcy
+19_000 dziewiętnaście tysięcy
+20_000 dwadzieścia tysięcy
+20_001 dwadzieścia tysięcy jeden
+20_010 dwadzieścia tysięcy dziesięć
+20_101 dwadzieścia tysięcy sto jeden
+21_000 dwadzieścia jeden tysięcy
+22_000 dwadzieścia dwa tysiące
+23_000 dwadzieścia trzy tysiące
+24_000 dwadzieścia cztery tysiące
+100_000 sto tysięcy
+101_000 sto jeden tysięcy
+102_000 sto dwa tysiące
+103_000 sto trzy tysiące
+104_000 sto cztery tysiące
+105_000 sto pięć tysięcy
+106_000 sto sześć tysięcy
+107_000 sto siedem tysięcy
+108_000 sto osiem tysięcy
+109_000 sto dziewięć tysięcy
+110_000 sto dziesięć tysięcy
+111_000 sto jedenaście tysięcy
+112_000 sto dwanaście tysięcy
+113_000 sto trzynaście tysięcy
+114_000 sto czternaście tysięcy
+115_000 sto piętnaście tysięcy
+116_000 sto szesnaście tysięcy
+117_000 sto siedemnaście tysięcy
+118_000 sto osiemnaście tysięcy
+119_000 sto dziewiętnaście tysięcy
+120_000 sto dwadzieścia tysięcy
+201_000 dwieście jeden tysięcy
+201_001 dwieście jeden tysięcy jeden
+202_000 dwieście dwa tysiące
+203_000 dwieście trzy tysiące
+204_000 dwieście cztery tysiące
+205_000 dwieście pięć tysięcy
+206_000 dwieście sześć tysięcy
+207_000 dwieście siedem tysięcy
+208_000 dwieście osiem tysięcy
+209_000 dwieście dziewięć tysięcy
+212_000 dwieście dwanaście tysięcy
+502_305 pięćset dwa tysiące trzysta pięć
+999_999 dziewięćset dziewięćdziesiąt dziewięć tysięcy dziewięćset dziewięćdziesiąt dziewięć
+
+1_000_000 jeden milion
+2_000_000 dwa miliony
+6_000_000 sześć milionów
+11_000_000 jedenaście milionów  //?
+12_000_000 dwanaście milionów  //?
+13_000_000 trzynaście milionów  //?
+14_000_000 czternaście milionów  //?
+15_000_000 piętnaście milionów  //?
+16_000_000 szesnaście milionów  //?
+17_000_000 siedemnaście milionów  //?
+61_000_000 sześćdziesiąt jeden milionów
+62_000_000 sześćdziesiąt dwa miliony
+62_003_005 sześćdziesiąt dwa miliony trzy tysiące pięć
+62_003_105 sześćdziesiąt dwa miliony trzy tysiące sto pięć
+62_003_155 sześćdziesiąt dwa miliony trzy tysiące sto pięćdziesiąt pięć
+63_000_000 sześćdziesiąt trzy miliony
+62_003_005 sześćdziesiąt dwa miliony trzy tysiące pięć
+64_000_000 sześćdziesiąt cztery miliony
+65_000_000 sześćdziesiąt pięć milionów
+66_000_000 sześćdziesiąt sześć milionów
+67_000_000 sześćdziesiąt siedem milionów
+68_000_000 sześćdziesiąt osiem milionów
+69_000_000 sześćdziesiąt dziewięć milionów
+304_000_000 trzysta cztery miliony
+306_000_000 trzysta sześć milionów
+312_000_000 trzysta dwanaście milionów //?
+316_000_000 trzysta szesnaście milionów
+362_000_000 trzysta sześćdziesiąt dwa miliony
+366_000_000 trzysta sześćdziesiąt sześć milionów
+
+1_000_000_000 jeden miliard //?
+2_000_000_000 dwa miliardy //?
+6_000_000_000 sześć miliardów //?
+12_000_000_000 dwanaście miliardów //?
+16_000_000_000 szesnaście miliardów //?
+62_000_000_000 sześćdziesiąt dwa miliardy //?
+66_000_000_000 sześćdziesiąt sześć miliardów //?
+99_000_000_909 dziewięćdziesiąt dziewięć miliardów dziewięćset dziewięć //?
+99_000_900_909 dziewięćdziesiąt dziewięć miliardów dziewięćset tysięcy dziewięćset dziewięć
+302_000_000_000 trzysta dwa miliardy //?
+312_000_000_000 trzysta dwanaście miliardów
+362_000_000_000 trzysta sześćdziesiąt dwa miliardy
+366_000_000_000 trzysta sześćdziesiąt sześć miliardów
+
+1_000_000_000_000 jeden bilion //?
+2_000_000_000_000 dwa biliony //?
+6_000_000_000_000 sześć bilionów //?
+
+-1 minus jeden
+-15 minus piętnaście
+"3.1415926" trzy przecinek jeden cztery jeden pięć dziewięć dwa sześć
+"-3.1415926" minus trzy przecinek jeden cztery jeden pięć dziewięć dwa sześć
+
+// ...and so on
+"3.14159265258979323846" trzy przecinek jeden cztery jeden pięć dziewięć dwa sześć pięć dwa pięć...
+
+// scientific notation
+"3.4e22" trzy przecinek cztery razy dziesięć do potęgi dwadzieścia dwa

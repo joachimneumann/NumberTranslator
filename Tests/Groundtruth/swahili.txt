@@ -1,0 +1,145 @@
+0 sifuri
+1 moja
+2 mbili
+3 tatu
+4 nne
+5 tano
+6 sita
+7 saba
+8 nane
+9 tisa
+10 kumi
+11 kumi na moja
+12 kumi na mbili
+13 kumi na tatu
+14 kumi na nne
+15 kumi na tano
+16 kumi na sita
+17 kumi na saba
+18 kumi na nane
+19 kumi na tisa
+20 ishirini
+21 ishirini na moja
+22 ishirini na mbili
+23 ishirini na tatu
+24 ishirini na nne
+25 ishirini na tano
+26 ishirini na sita
+27 ishirini na saba
+28 ishirini na nane
+29 ishirini na tisa
+30 thelathini
+30 thelathini
+31 thelathini na moja
+32 thelathini na mbili
+33 thelathini na tatu
+34 thelathini na nne
+35 thelathini na tano
+36 thelathini na sita
+37 thelathini na saba
+38 thelathini na nane
+39 thelathini na tisa
+40 arobaini
+41 arobaini na moja
+42 arobaini na mbili
+43 arobaini na tatu
+44 arobaini na nne
+45 arobaini na tano
+46 arobaini na sita
+47 arobaini na saba
+48 arobaini na nane
+49 arobaini na tisa
+50 hamsini
+55 hamsini na tano
+60 sitini
+61 sitini na moja
+70 sabini
+72 sabini na mbili
+75 sabini na tano
+80 themanini
+88 themanini na nane
+90 tisini
+92 tisini na mbili
+
+100 mia moja
+109 mia moja na tisa
+120 mia moja na ishirini
+150 mia moja na hamsini
+200 mia mbili
+222 mia mbili na ishirini na mbili
+300 mia tatu
+400 mia nne
+500 mia tano
+544 mia tano na arobaini na nne
+600 mia sita
+642 mia sita na arobaini na mbili
+700 mia saba
+740 mia saba na arobaini
+800 mia nane
+851 mia nane na hamsini na moja
+900 mia tisa
+908 mia tisa na nane
+
+1_000 elfu moja
+1_220 elfu moja, mia mbili na ishirini
+1_997 elfu moja, mia tisa na tisini na saba
+2_000 elfu mbili
+2_007 elfu mbili na saba
+2_014 elfu mbili, kumi na nne
+3_000 elfu tatu
+3_003 elfu tatu na tatu
+5_026 elfu tano, ishirini na sita
+6_885 elfu sita, mia nane na themanini na tano
+8_132 elfu nane, mia moja na thelathini na mbili
+
+10_000 elfu kumi
+13_740 elfu kumi na tatu, mia saba na arobaini
+10_004 elfu kumi na nne
+10_001 elfu kumi na moja
+14_000 elfu kumi na nne
+20_000 elfu ishirini
+29_003 elfu ishirini na tisa na tatu
+30_000 elfu thelathini
+34_899 elfu thelathini na nne, mia nane na tisini na tisa
+50_000 elfu hamsini
+60_007 elfu sitini na saba
+67_000 elfu sitini na saba
+75_400 elfu sabini na tano, mia nne
+78_000 elfu sabini na nane
+
+100_000 laki moja
+109_007 laki moja, elfu tisa na saba
+360_009 laki tatu, elfu sitini na tisa
+555_978 laki tano, elfu hamsini na tano, mia tisa na sabini na nane
+908_695 laki tisa, elfu nane, mia sita na tisini na tano
+
+1_000_000 milioni moja
+2_000_000 milioni mbili
+2_908_330 milioni mbili, laki tisa, elfu nane, mia tatu na thelathini
+3_000_000 milioni tatu
+3_710_001 milioni tatu, laki saba, elfu kumi na moja
+7_795_794 milioni saba, laki saba, elfu tisini na tano, mia saba na tisini na nne
+8_177_345 milioni nane, laki moja, elfu sabini na saba, mia tatu na arobaini na tano
+9_437_450 milioni tisa, laki nne, elfu thelathini na saba, mia nne na hamsini
+
+10_000_000 milioni kumi
+11_000_004 milioni kumi na moja na nne
+20_000_000 milioni ishirini
+30_000_000 milioni thelathini
+
+100_000_000 milioni mia moja
+
+1_000_000_000 bilioni moja
+8_000_000_000 bilioni nane
+
+100_000_000_000 bilioni mia moja
+
+1_000_000_000_000 trilioni moja
+
+-1 negativi moja
+-75 negativi sabini na tano
+-1_000_000 negativi milioni moja
+3.1415926 tatu nukta moja nne moja tano tisa mbili sita
+-3.1415926 negativi tatu nukta moja nne moja tano tisa mbili sita
+3.4e16 tatu nukta nne EE kumi na sita
+3.5e26 tatu nukta tano EE ishirini na sita

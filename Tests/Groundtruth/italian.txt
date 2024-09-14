@@ -1,0 +1,215 @@
+0 zero
+1 uno
+2 due
+3 tre
+4 quattro
+5 cinque
+6 sei
+7 sette
+8 otto
+9 nove
+10 dieci
+11 undici
+12 dodici
+13 tredici
+14 quattordici
+15 quindici
+16 sedici
+17 diciassette
+18 diciotto
+19 diciannove
+20 venti
+21 ventuno
+22 ventidue
+23 ventitré
+24 ventiquattro
+25 venticinque
+26 ventisei
+27 ventisette
+28 ventotto
+29 ventinove
+30 trenta
+31 trentuno
+32 trentadue
+33 trentatré
+34 trentaquattro
+35 trentacinque
+36 trentasei
+37 trentasette
+38 trentotto
+39 trentanove
+40 quaranta
+41 quarantuno
+42 quarantadue
+43 quarantatré
+44 quarantaquattro
+45 quarantacinque
+46 quarantasei
+47 quarantasette
+48 quarantotto
+49 quarantanove
+50 cinquanta
+51 cinquantuno
+52 cinquantadue
+53 cinquantatré
+54 cinquantaquattro
+55 cinquantacinque
+56 cinquantasei
+57 cinquantasette
+58 cinquantotto
+59 cinquantanove
+60 sessanta
+61 sessantuno
+62 sessantadue
+63 sessantatré
+64 sessantaquattro
+65 sessantacinque
+66 sessantasei
+67 sessantasette
+68 sessantotto
+69 sessantanove
+70 settanta
+71 settantuno
+72 settantadue
+73 settantatré
+74 settantaquattro
+75 settantacinque
+76 settantasei
+77 settantasette
+78 settantotto
+79 settantanove
+80 ottanta
+81 ottantuno
+82 ottantadue
+83 ottantatré
+84 ottantaquattro
+85 ottantacinque
+86 ottantasei
+87 ottantasette
+88 ottantotto
+89 ottantanove
+90 novanta
+91 novantuno
+92 novantadue
+93 novantatré
+94 novantaquattro
+95 novantacinque
+96 novantasei
+97 novantasette
+98 novantotto
+99 novantanove
+100 cento
+101 centouno
+102 centodue
+103 centotré
+104 centoquattro
+105 centocinque
+106 centosei
+107 centosette
+108 centotto
+109 centonove
+110 centodieci
+111 centundici
+112 centododici
+113 centotredici
+119 centodiciannove
+120 centoventi
+121 centoventuno
+122 centoventidue
+123 centoventitré
+128 centoventotto
+190 centonovanta
+144 centoquarantaquattro
+200 duecento
+201 duecentouno
+203 duecentotré
+208 duecentotto
+210 duecentodieci
+211 duecentundici
+234 duecentotrentaquattro
+250 duecentocinquanta
+300 trecento
+371 trecentosettantuno
+400 quattrocento
+433quattrocentotrentatré
+500 cinquecento
+569 cinquecentosessantanove
+579 cinquecentosettantanove
+589 cinquecentottantanove
+599 cinquecentonovantanove
+600 seicento
+700 settecento
+706 settecentosei
+726 settecentoventisei
+800 ottocento
+900 novecento
+999 novecentonovantanove
+1_000 mille
+1_001 milleuno
+1_003 milletre
+1_008 milleotto
+1_500 millecinquecento
+1_813 milleottocentotredici
+2_000 duemila
+3_000 tremila
+3_001 tremilauno
+3_010 tremiladieci
+5_000 cinquemila
+5_678 cinquemilaseicentosettantotto
+6_000 seimila
+6_001 seimilauno
+9_999 novemilanovecentonovantanove
+10_000 diecimila
+11_001 undicimilauno
+12_345 dodicimilatrecentoquarantacinque
+12_893 dodicimilaottocentonovantatré
+12_786 dodicimilasettecentottantasei
+70_000 settantamila
+100_000 centomila
+187_372 centottantasettemilatrecentosettantadue
+200_000 duecentomila
+280_065 duecentottantamilasessantacinque
+706_210 settecentoseimiladuecentodieci
+999_999 novecentonovantanovemilanovecentonovantanove
+1_000_000 un milione
+1_000_050 un milione cinquanta
+3_000_100 tre milioni cento
+10_000_000 dieci milioni
+40_000_000 quaranta milioni
+62_000_000 sessantadue milioni
+62_003_005 sessantadue milioni tremilacinque
+62_003_105 sessantadue milioni tremilacentocinque
+100_000_000 cento milioni
+123_456_789 centoventitré milioni quattrocentocinquantaseimilasettecentottantanove
+500_000_000 cinquecento milioni
+876_543_210 ottocentosettantasei milioni cinquecentoquarantatrémiladuecentodieci
+987_654_321 novecentottantasette milioni seicentocinquantaquattromilatrecentoventuno
+999_999_999 novecentonovantanove milioni novecentonovantanovemilanovecentonovantanove
+1_000_000_000 un miliardo
+1_000_000_200 un miliardo duecento
+1_234_567_890 un miliardo duecentotrentaquattro milioni cinquecentosessantasettemilaottocentonovanta
+9_867_654_321 nove miliardi ottocentosessantasette milioni seicentocinquantaquattromilatrecentoventuno
+10_000_000_000 dieci miliardi
+20_000_000_700 venti miliardi settecento
+100_000_000_000 cento miliardi
+400_000_000_000 quattrocento miliardi
+987_654_321_987 novecentottantasette miliardi seicentocinquantaquattro milioni trecentoventunomilanovecentottantasette
+876_543_210_876 ottocentosettantasei miliardi cinquecentoquarantatré milioni duecentodiecimilaottocentosettantasei
+999_999_999_999 novecentonovantanove miliardi novecentonovantanove milioni novecentonovantanovemilanovecentonovantanove
+1_000_000_000_000 un bilione
+3_000_000_000_000 tre bilioni
+3_000_000_000_003 tre bilioni tre
+3_000_000_003_000 tre bilioni tremila
+3_000_003_000_000 tre bilioni tre milioni
+3_003_000_000_000 tre bilioni tre miliardi
+100_000_000_000_000 cento bilioni
+-1 meno uno
+1,5 uno virgola cinque
+-1,5 meno uno virgola cinque
+-1,51 meno uno virgola cinquantuno
+-0,7 meno zero virgola sette
+-1,5 meno uno virgola cinque
+-74 meno settantaquattro
+-1_000_000 meno un milione
+3,1415926 tre virgola uno quattro uno cinque nove due sei
+-3,1415926 meno tre virgola uno quattro uno cinque nove due sei

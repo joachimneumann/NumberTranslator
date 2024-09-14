@@ -1,0 +1,12 @@
+0 zero unknown
+1 translator.symbolOne
+2 translator.symbolOne+translator.symbolOne
+3 translator.symbolOne+translator.symbolOne+translator.symbolOne
+10 translator.symbolTen
+100 translator.symbolHundred
+1_000 translator.symbolThousand
+4_122 translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolHundred+translator.symbolTen+translator.symbolTen+translator.symbolOne+translator.symbolOne
+4_002 translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolOne+translator.symbolOne
+10_000 translator.symbolTenThousand
+100_000 translator.symbolHundredThousand
+1_000_000 translator.symbolMillion

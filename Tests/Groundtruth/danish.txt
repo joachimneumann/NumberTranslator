@@ -1,0 +1,175 @@
+0 nul
+1 en
+2 to
+3 tre
+4 fire
+5 fem
+6 seks
+7 syv
+8 otte
+9 ni
+10 ti
+11 elleve
+12 tolv
+13 tretten
+14 fjorten
+15 femten
+16 seksten
+17 sytten
+18 atten
+19 nitten
+20 tyve
+21 enogtyve
+22 toogtyve
+23 treogtyve
+24 fireogtyve
+25 femogtyve
+26 seksogtyve
+27 syvogtyve
+28 otteogtyve
+29 niogtyve
+30 tredive
+31 enogtredive
+32 toogtredive
+33 treogtredive
+34 fireogtredive
+35 femogtredive
+36 seksogtredive
+37 syvogtredive
+38 otteogtredive
+39 niogtredive
+40 fyrre
+41 enogfyrre
+42 toogfyrre
+43 treogfyrre
+44 fireogfyrre
+45 femogfyrre
+46 seksogfyrre
+47 syvogfyrre
+48 otteogfyrre
+49 niogfyrre
+50 halvtreds
+51 enoghalvtreds
+52 tooghalvtreds
+53 treoghalvtreds
+54 fireoghalvtreds
+55 femoghalvtreds
+56 seksoghalvtreds
+57 syvoghalvtreds
+58 otteoghalvtreds
+59 nioghalvtreds
+60 tres
+61 enogtres
+62 toogtres
+63 treogtres
+64 fireogtres
+65 femogtres
+66 seksogtres
+67 syvogtres
+68 otteogtres
+69 niogtres
+70 halvfjerds
+71 enoghalvfjerds
+72 tooghalvfjerds
+73 treoghalvfjerds
+74 fireoghalvfjerds
+75 femoghalvfjerds
+76 seksoghalvfjerds
+77 syvoghalvfjerds
+78 otteoghalvfjerds
+79 nioghalvfjerds
+80 firs
+81 enogfirs
+82 toogfirs
+83 treogfirs
+84 fireogfirs
+85 femogfirs
+86 seksogfirs
+87 syvogfirs
+88 otteogfirs
+89 niogfirs
+90 halvfems
+91 enoghalvfems
+92 tooghalvfems
+93 treoghalvfems
+94 fireoghalvfems
+95 femoghalvfems
+96 seksoghalvfems
+97 syvoghalvfems
+98 otteoghalvfems
+99 nioghalvfems
+100 hundred
+101 hundred og en
+102 hundred og to
+103 hundred og tre
+104 hundred og fire
+105 hundred og fem
+106 hundred og seks
+107 hundred og syv
+108 hundred og otte
+109 hundred og ni
+110 hundred og ti
+111 hundred og elleve
+112 hundred og tolv
+113 hundred og tretten
+119 hundred og nitten
+120 hundred og tyve
+121 hundred og enogtyve
+142 hundred og toogfyrre
+190 hundred og halvfems
+444 fire hundrede og fireogfyrre
+999 ni hundrede og nioghalvfems
+1_000 ettusind
+1_001 ettusind og en
+1_005 ettusind og fem
+1_009 ettusind og ni
+1_010 ettusind og ti
+1_011 ettusind og elleve
+1_012 ettusind og tolv
+1_015 ettusind og femten
+1_035 ettusind og femogtredive
+1_099 ettusind og nioghalvfems
+1_100 ettusind og hundred
+1_101 ettusind og hundred og en
+1_105 ettusind og hundred og fem
+1_110 ettusind og hundred og ti
+1_111 ettusind og hundred og elleve
+1_115 ettusind og hundred og femten
+1_121 ettusind og hundred og enogtyve
+1_125 ettusind og hundred og femogtyve
+2_500 to tusinde og fem hundrede
+3_000 tre tusinde
+3_142 tre tusinde og hundred og toogfyrre
+9_999 ni tusinde og ni hundrede og nioghalvfems
+10_000 ti tusinde
+10_001 ti tusinde og en
+10_002 ti tusinde og to
+20_001 tyve tusinde og en
+20_010 tyve tusinde og ti
+20_101 tyve tusinde og hundred og en
+100_000 hundrede tusinde
+102_000 hundrede og to tusinde
+201_001 to hundrede og en tusinde og en
+220_000 to hundrede og tyve tusinde
+502_305 fem hundrede og to tusinde og tre hundrede og fem
+999_999 ni hundrede og nioghalvfems tusinde og ni hundrede og nioghalvfems
+1_000_000 en million
+62_000_000 toogtres millioner
+62_003_005 toogtres millioner og tre tusinde og fem
+62_003_105 toogtres millioner og tre tusinde og hundred og fem
+62_003_155 toogtres millioner og tre tusinde og hundred og femoghalvtreds
+99_999_999 nioghalvfems millioner og ni hundrede og nioghalvfems tusinde og ni hundrede og nioghalvfems
+100_000_000 hundrede millioner
+102_000_000 hundrede og to millioner
+102_102_000 hundrede og to millioner og hundrede og to tusinde
+99_000_000_909 nioghalvfems milliarder og ni hundrede og ni
+1_000_000_000_000 en billion
+1_000_000_000_909 en billion og ni hundrede og ni
+100_000_000_000_000 hundrede billioner
+102_000_000_000_000 hundrede og to billioner
+-1 minus en
+"-1.5" minus en komma fem
+"1.5" en komma fem
+"3.1415926" tre komma en fire en fem ni to seks
+"-3.1415926" minus tre komma en fire en fem ni to seks
+"3.4e22" tre komma fire gange ti i toogtyve

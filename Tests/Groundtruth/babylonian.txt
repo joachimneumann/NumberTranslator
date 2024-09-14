@@ -1,0 +1,17 @@
+SETTINGS babylonianAllowEmptyColumn false
+1 translator.symbolOne
+60 translator.symbolOne+translator.symbolNone // 6,0
+61 translator.symbolOne+translator.symbolOne // 6,1
+147 translator.symbolTwo+translator.symbolTwenty+translator.symbolSeven // 2,27
+3661 translator.symbolOne+translator.symbolOne+translator.symbolOne // 1,1,1
+21609 translator.symbolSix+translator.symbolNone+translator.symbolNine // 6,0 9.
+424000  translator.symbolOne+translator.symbolFifty+translator.symbolSeven+translator.symbolForty+translator.symbolSix+translator.symbolForty // 1,57,46,40
+
+SETTINGS babylonianAllowEmptyColumn true
+1 translator.symbolOne
+60 translator.symbolOne // 6,0 but no empty column :(
+61 translator.symbolOne+translator.symbolOne // 6,1
+147 translator.symbolTwo+translator.symbolTwenty+translator.symbolSeven // 2,27
+3661 translator.symbolOne+translator.symbolOne+translator.symbolOne // 1,1,1
+21609 translator.symbolSix+translator.symbolEmptyColumn+translator.symbolNine // 6,0 9.
+424000 translator.symbolOne+translator.symbolFifty+translator.symbolSeven+translator.symbolForty+translator.symbolSix+translator.symbolForty // 1,57,46,40

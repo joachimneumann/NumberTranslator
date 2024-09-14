@@ -1,0 +1,364 @@
+SETTINGS vietnameseCompact false
+SETTINGS vietnameseThousand .nghìn
+SETTINGS vietnameseSecondLast .lẻ
+
+0 không
+1 một
+2 hai
+3 ba
+4 bốn
+5 năm
+6 sáu
+7 bảy
+8 tám
+9 chín
+10 mười
+11 mười một
+12 mười hai
+13 mười ba
+14 mười bốn
+15 mười lăm
+16 mười sáu
+17 mười bảy
+18 mười tám
+19 mười chín
+20 hai mươi
+21 hai mươi mốt
+22 hai mươi hai
+23 hai mươi ba
+24 hai mươi bốn
+25 hai mươi lăm
+26 hai mươi sáu
+27 hai mươi bảy
+28 hai mươi tám
+29 hai mươi chín
+30 ba mươi
+31 ba mươi mốt
+32 ba mươi hai
+33 ba mươi ba
+34 ba mươi bốn
+35 ba mươi lăm
+36 ba mươi sáu
+37 ba mươi bảy
+38 ba mươi tám
+39 ba mươi chín
+40 bốn mươi
+41 bốn mươi mốt
+42 bốn mươi hai
+43 bốn mươi ba
+44 bốn mươi bốn
+45 bốn mươi lăm
+46 bốn mươi sáu
+47 bốn mươi bảy
+48 bốn mươi tám
+49 bốn mươi chín
+50 năm mươi
+51 năm mươi mốt
+52 năm mươi hai
+53 năm mươi ba
+54 năm mươi bốn
+55 năm mươi lăm
+56 năm mươi sáu
+57 năm mươi bảy
+58 năm mươi tám
+59 năm mươi chín
+60 sáu mươi
+61 sáu mươi mốt
+62 sáu mươi hai
+63 sáu mươi ba
+64 sáu mươi bốn
+65 sáu mươi lăm
+66 sáu mươi sáu
+67 sáu mươi bảy
+68 sáu mươi tám
+69 sáu mươi chín
+70 bảy mươi
+71 bảy mươi mốt
+72 bảy mươi hai
+73 bảy mươi ba
+74 bảy mươi bốn
+75 bảy mươi lăm
+76 bảy mươi sáu
+77 bảy mươi bảy
+78 bảy mươi tám
+79 bảy mươi chín
+80 tám mươi
+81 tám mươi mốt
+82 tám mươi hai
+83 tám mươi ba
+84 tám mươi bốn
+85 tám mươi lăm
+86 tám mươi sáu
+87 tám mươi bảy
+88 tám mươi tám
+89 tám mươi chín
+90 chín mươi
+91 chín mươi mốt
+92 chín mươi hai
+93 chín mươi ba
+94 chín mươi bốn
+95 chín mươi lăm
+96 chín mươi sáu
+97 chín mươi bảy
+98 chín mươi tám
+99 chín mươi chín
+100 một trăm
+101 một trăm lẻ một
+102 một trăm lẻ hai
+103 một trăm lẻ ba
+104 một trăm lẻ bốn
+105 một trăm lẻ năm
+106 một trăm lẻ sáu
+107 một trăm lẻ bảy
+108 một trăm lẻ tám
+109 một trăm lẻ chín
+
+SETTINGS vietnameseSecondLast .linh
+101 một trăm linh một
+102 một trăm linh hai
+103 một trăm linh ba
+104 một trăm linh bốn
+105 một trăm linh năm
+106 một trăm linh sáu
+107 một trăm linh bảy
+108 một trăm linh tám
+109 một trăm linh chín
+
+SETTINGS vietnameseSecondLast .lẻ
+110 một trăm mười
+111 một trăm mười một
+119 một trăm mười chín
+120 một trăm hai mươi
+121 một trăm hai mươi mốt
+190 một trăm chín mươi
+999 chín trăm chín mươi chín
+1_000 một nghìn
+1_001 một nghìn không trăm lẻ một
+1_005 một nghìn không trăm lẻ năm
+1_009 một nghìn không trăm lẻ chín
+1_010 một nghìn không trăm mười
+1_011 một nghìn không trăm mười một
+1_012 một nghìn không trăm mười hai
+1_015 một nghìn không trăm mười lăm
+1_035 một nghìn không trăm ba mươi lăm
+1_099 một nghìn không trăm chín mươi chín
+3_000 ba nghìn
+1_100 một nghìn một trăm
+1_101 một nghìn một trăm lẻ một
+1_105 một nghìn một trăm lẻ năm
+1_110 một nghìn một trăm mười
+1_111 một nghìn một trăm mười một
+1_115 một nghìn một trăm mười lăm
+1_121 một nghìn một trăm hai mươi mốt
+1_125 một nghìn một trăm hai mươi lăm
+2_002 hai nghìn không trăm lẻ hai
+3_005 ba nghìn không trăm lẻ năm
+10_000 mười nghìn
+10_001 mười nghìn không trăm lẻ một
+20_001 hai mươi nghìn không trăm lẻ một
+20_010 hai mươi nghìn không trăm mười
+34_000 ba mươi bốn nghìn
+38_003 ba mươi tám nghìn không trăm lẻ ba
+
+// vạn is 10000
+// 34_000 Ba vạn bốn nghìn is not wrong
+// 34_200 Ba vạn bốn nghìn hai trăm
+
+52_425 năm mươi hai nghìn bốn trăm hai mươi lăm
+20_101 hai mươi nghìn một trăm lẻ một
+201_001 hai trăm lẻ một nghìn không trăm lẻ một
+502_305 năm trăm lẻ hai nghìn ba trăm lẻ năm
+999_999 chín trăm chín mươi chín nghìn chín trăm chín mươi chín
+1_000_000 một triệu
+1_000_003 một triệu không trăm lẻ ba
+1_000_010 một triệu không trăm mười
+
+1_000_011 một triệu không trăm mười một
+1_000_111 một triệu một trăm mười một
+// một or mốt ????  1_000_011 một triệu không trăm mười mốt
+// một or mốt ????  1_000_111 một triệu mốt trăm mười mốt
+
+
+// không trăm lẻ or not???
+1_003_000 một triệu không trăm lẻ ba nghìn
+3_009_000 ba triệu không trăm lẻ chín nghìn
+1_000_000_000 một tỷ
+1_000_000_003 một tỷ không trăm lẻ ba
+62_000_000 sáu mươi hai triệu
+62_003_005 sáu mươi hai triệu không trăm lẻ ba nghìn không trăm lẻ năm
+62_003_105 sáu mươi hai triệu không trăm lẻ ba nghìn một trăm lẻ năm
+62_003_155 sáu mươi hai triệu không trăm lẻ ba nghìn một trăm năm mươi lăm
+99_000_000_909 chín mươi chín tỷ chín trăm lẻ chín
+99_999_999_999 chín mươi chín tỷ chín trăm chín mươi chín triệu chín trăm chín mươi chín nghìn chín trăm chín mươi chín
+
+SETTINGS vietnameseCompact true
+0 không
+1 một
+2 hai
+3 ba
+4 bốn
+5 năm
+6 sáu
+7 bảy
+8 tám
+9 chín
+10 mười
+11 mười một
+12 mười hai
+13 mười ba
+14 mười bốn
+15 mười lăm
+16 mười sáu
+17 mười bảy
+18 mười tám
+19 mười chín
+20 hai mươi
+21 hai mốt
+22 hai hai
+23 hai ba
+24 hai bốn
+25 hai lăm
+26 hai sáu
+27 hai bảy
+28 hai tám
+29 hai chín
+30 ba mươi
+31 ba mốt
+32 ba hai
+33 ba ba
+34 ba bốn
+35 ba lăm
+36 ba sáu
+37 ba bảy
+38 ba tám
+39 ba chín
+40 bốn mươi
+41 bốn mốt
+42 bốn hai
+43 bốn ba
+44 bốn bốn
+45 bốn lăm
+46 bốn sáu
+47 bốn bảy
+48 bốn tám
+49 bốn chín
+50 năm mươi
+51 năm mốt
+52 năm hai
+53 năm ba
+54 năm bốn
+55 năm lăm
+56 năm sáu
+57 năm bảy
+58 năm tám
+59 năm chín
+60 sáu mươi
+61 sáu mốt
+62 sáu hai
+63 sáu ba
+64 sáu bốn
+65 sáu lăm
+66 sáu sáu
+67 sáu bảy
+68 sáu tám
+69 sáu chín
+70 bảy mươi
+71 bảy mốt
+72 bảy hai
+73 bảy ba
+74 bảy bốn
+75 bảy lăm
+76 bảy sáu
+77 bảy bảy
+78 bảy tám
+79 bảy chín
+80 tám mươi
+81 tám mốt
+82 tám hai
+83 tám ba
+84 tám bốn
+85 tám lăm
+86 tám sáu
+87 tám bảy
+88 tám tám
+89 tám chín
+90 chín mươi
+91 chín mốt
+92 chín hai
+93 chín ba
+94 chín bốn
+95 chín lăm
+96 chín sáu
+97 chín bảy
+98 chín tám
+99 chín chín
+100 một trăm
+101 một trăm lẻ một
+102 một trăm lẻ hai
+103 một trăm lẻ ba
+104 một trăm lẻ bốn
+105 một trăm lẻ năm
+106 một trăm lẻ sáu
+107 một trăm lẻ bảy
+108 một trăm lẻ tám
+109 một trăm lẻ chín
+
+SETTINGS vietnameseSecondLast .linh
+101 một trăm linh một
+102 một trăm linh hai
+103 một trăm linh ba
+104 một trăm linh bốn
+105 một trăm linh năm
+106 một trăm linh sáu
+107 một trăm linh bảy
+108 một trăm linh tám
+109 một trăm linh chín
+
+SETTINGS vietnameseSecondLast .lẻ
+110 một trăm mười
+111 một trăm mười một
+119 một trăm mười chín
+120 một trăm hai mươi
+121 một trăm hai mốt
+190 một trăm chín mươi
+999 chín trăm chín chín
+1_000 một nghìn
+1_001 một nghìn không trăm lẻ một
+1_005 một nghìn không trăm lẻ năm
+1_009 một nghìn không trăm lẻ chín
+1_010 một nghìn không trăm mười
+1_011 một nghìn không trăm mười một
+1_012 một nghìn không trăm mười hai
+1_015 một nghìn không trăm mười lăm
+1_035 một nghìn không trăm ba lăm
+1_099 một nghìn không trăm chín chín
+1_100 một nghìn một trăm
+1_101 một nghìn một trăm lẻ một
+1_105 một nghìn một trăm lẻ năm
+1_110 một nghìn một trăm mười
+1_111 một nghìn một trăm mười một
+1_115 một nghìn một trăm mười lăm
+1_121 một nghìn một trăm hai mốt
+1_125 một nghìn một trăm hai lăm
+10_000 mười nghìn
+10_001 mười nghìn không trăm lẻ một
+20_001 hai mươi nghìn không trăm lẻ một
+20_010 hai mươi nghìn không trăm mười
+201_01 hai mươi nghìn một trăm lẻ một
+201_001 hai trăm lẻ một nghìn không trăm lẻ một
+502_305 năm trăm lẻ hai nghìn ba trăm lẻ năm
+999_999 chín trăm chín chín nghìn chín trăm chín chín
+62_000_000 sáu hai triệu
+62_003_005 sáu hai triệu không trăm lẻ ba nghìn không trăm lẻ năm
+62_003_105 sáu hai triệu không trăm lẻ ba nghìn một trăm lẻ năm
+62_003_155 sáu hai triệu không trăm lẻ ba nghìn một trăm năm lăm
+99_000_000_909 chín chín tỷ chín trăm lẻ chín
+99_999_999_999 chín chín tỷ chín trăm chín chín triệu chín trăm chín chín nghìn chín trăm chín chín
+
+SETTINGS vietnameseThousand .nghìn
+1_000_000_000_000 một nghìn tỷ
+999_000_000_000_000 chín trăm chín chín nghìn tỷ
+1_000_000_000_003 một nghìn tỷ không trăm lẻ ba
+SETTINGS vietnameseThousand .ngàn
+1_000_000_000_000 một ngàn tỷ
+999_000_000_000_000 chín trăm chín chín ngàn tỷ

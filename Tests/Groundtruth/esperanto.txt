@@ -1,0 +1,44 @@
+0 nul
+1 unu
+2 du
+3 tri
+4 kvar
+5 kvin
+6 ses
+7 sep
+8 ok
+9 naŭ
+10 dek
+11 dek unu
+12 dek du
+13 dek tri
+16 dek ses
+20 dudek
+21 dudek unu
+22 dudek du
+23 dudek tri
+24 dudek kvar
+30 tridek
+42 kvardek du
+100 cent
+104 cent kvar
+105 cent kvin
+106 cent ses
+221 ducent dudek unu
+222 ducent dudek du
+223 ducent dudek tri
+224 ducent dudek kvar
+442 kvarcent kvardek du
+1_000 mil
+1_729 mil sepcent dudek naŭ
+22_729 dudek du mil sepcent dudek naŭ
+1_000_000 miliono
+2_200_000 du milionoj ducent mil
+3_022_729 tri milionoj dudek du mil sepcent dudek naŭ
+1_000_000_000 miliardo
+4_003_022_729 kvar miliardoj tri milionoj dudek du mil sepcent dudek naŭ
+1_000_000_000_000 biliono
+5_004_003_022_729 kvin bilionoj kvar miliardoj tri milionoj dudek du mil sepcent dudek naŭ
+-1 minus unu
+-1_000_000 minus miliono
+1.5 unu kaj kvin

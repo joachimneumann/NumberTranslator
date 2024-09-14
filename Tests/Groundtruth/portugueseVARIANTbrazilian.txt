@@ -1,0 +1,160 @@
+// https://www.fluentu.com/blog/portuguese/portuguese-numbers/
+0 zero
+1 um
+2 dois
+3 três
+4 quatro
+5 cinco
+6 seis
+7 sete
+8 oito
+9 nove
+10 dez
+11 onze
+12 doze
+13 treze
+14 catorze
+15 quinze
+16 dezesseis
+17 dezessete
+18 dezoito
+19 dezenove
+20 vinte
+21 vinte e um
+30 trinta
+31 trinta e um
+32 trinta e dois
+33 trinta e três
+40 quarenta
+41 quarenta e um
+43 quarenta e três
+50 cinquenta
+51 cinquenta e um
+54 cinquenta e quatro
+60 sessenta
+61 sessenta e um
+70 setenta
+71 setenta e um
+80 oitenta
+81 oitenta e um
+90 noventa
+91 noventa e um
+99 noventa e nove
+
+100 cem
+101 cento e um
+102 cento e dois
+103 cento e três
+110 cento e dez
+115 cento e quinze
+120 cento e vinte
+121 cento e vinte e um
+126 cento e vinte e seis
+129 cento e vinte e nove
+130 cento e trinta
+137 cento e trinta e sete
+140 cento e quarenta
+150 cento e cinquenta
+160 cento e sessenta
+170 cento e setenta
+180 cento e oitenta
+190 cento e noventa
+199 cento e noventa e nove
+200 duzentos
+201 duzentos e um
+203 duzentos e três
+210 duzentos e dez
+220 duzentos e vinte
+222 duzentos e vinte e dois
+237 duzentos e trinta e sete
+300 trezentos
+359 trezentos e cinquenta e nove
+364 trezentos e sessenta e quatro
+400 quatrocentos
+404 quatrocentos e quatro
+415 quatrocentos e quinze
+500 quinhentos
+528 quinhentos e vinte e oito
+600 seiscentos
+626 seiscentos e vinte e seis
+700 setecentos
+750 setecentos e cinquenta
+800 oitocentos
+803 oitocentos e três
+900 novecentos
+999 novecentos e noventa e nove
+
+
+
+1_000 mil
+1_001 mil e um
+1_002 mil e dois
+1_010 mil e dez
+1_020 mil e vinte
+1_021 mil e vinte e um
+1_088 mil e oitenta e oito
+1_099 mil e noventa e nove
+1_100 mil e cem
+1_100 mil e cem
+1_101 mil cento e um
+1_200 mil e duzentos
+1_300 mil e trezentos
+1_101 mil cento e um
+1_110 mil cento e dez
+1_954 mil novecentos e cinquenta e quatro
+1_990 mil novecentos e noventa
+1_999 mil novecentos e noventa e nove
+2_000 dois mil
+2_022 dois mil e vinte e dois
+2_100 dois mil e cem
+2_122 dois mil cento e vinte e dois
+2_200 dois mil e duzentos
+2_235 dois mil duzentos e trinta e cinco
+3_000 três mil
+3_300 três mil e trezentos
+4_000 quatro mil
+4_259 quatro mil duzentos e cinquenta e nove
+4_510 quatro mil quinhentos e dez
+5_000 cinco mil
+9_135 nove mil cento e trinta e cinco
+9_837 nove mil oitocentos e trinta e sete
+
+10_000 dez mil
+10_001 dez mil e um
+10_021 dez mil e vinte e um
+10_600 dez mil e seiscentos
+10_621 dez mil seiscentos e vinte e um
+20_000 vinte mil
+30_000 trinta mil
+54_033 cinquenta e quatro mil e trinta e três
+
+100_000 cem mil
+100_001 cem mil e um
+101_000 cento e um mil
+101_500 cento e um mil e quinhentos
+101_550 cento e um mil quinhentos e cinquenta
+173_862 cento e setenta e três mil oitocentos e sessenta e dois
+200_000 duzentos mil
+300_000 trezentos mil
+631_897 seiscentos e trinta e um mil oitocentos e noventa e sete
+900_000 novecentos mil
+999_000 novecentos e noventa e nove mil
+999_999 novecentos e noventa e nove mil novecentos e noventa e nove
+
+1_000_000 um milhão
+1_100_000 um milhão e cem mil
+1_120_000 um milhão e cento e vinte mil
+2_000_000 dois milhões
+2_000_100 dois milhões e cem
+2_000_127 dois milhões cento e vinte e sete
+4_000_000 quatro milhões
+7_543_100 sete milhões e quinhentos e quarenta e três mil e cem
+8_000_000 oito milhões
+
+16_550_024 dezesseis milhões quinhentos e cinquenta mil e vinte e quatro
+
+1_000_000_000 um bilhão
+2_000_000_000 dois bilhões
+1_000_000_000_000 um trilhão
+2_000_000_000_000 dois trilhões
+3_000_000_000_000 três trilhões
