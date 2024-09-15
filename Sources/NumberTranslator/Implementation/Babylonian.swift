@@ -1,5 +1,5 @@
 //
-//  BabylonianImplementation.swift
+//  Babylonian.swift
 //  NumberTranslator
 //
 //  Created by Joachim Neumann on 26.08.24.
@@ -8,11 +8,10 @@
 import Foundation
 import SwiftUI
 
-class BabylonianImplementation: GeneralLanguage, BabylonianParameterProtocol {
+class Babylonian: GeneralLanguage, BabylonianParameterProtocol {
 
     var babylonianAllowEmptyColumn: Bool = false
 
-    let symbolSpace = ""
     let symbolNone = "\u{00a0}"//  " "
     let symbolEmptyColumn = "𒑊"
     let symbolOne = "𒐕"
@@ -83,7 +82,6 @@ class BabylonianImplementation: GeneralLanguage, BabylonianParameterProtocol {
             value -= 60*60*60 * group
         }
         if value >= 60*60 {
-            if ret.count > 0 {  ret += symbolSpace }
             let group = value / (60*60)
             ret += representation(group)
             value -= 60*60 * group
@@ -91,7 +89,6 @@ class BabylonianImplementation: GeneralLanguage, BabylonianParameterProtocol {
             if ret.count > 0 { ret += none }
         }
         if value >= 60 {
-            if ret.count > 0 {  ret += symbolSpace }
             let group = value / (60)
             ret += representation(group)
             value -= 60 * group
@@ -99,7 +96,6 @@ class BabylonianImplementation: GeneralLanguage, BabylonianParameterProtocol {
             if ret.count > 0 { ret += none }
         }
         if value > 0 {
-            if ret.count > 0 {  ret += symbolSpace }
             ret += representation(value)
         } else {
             if ret.count > 0 { ret += none }

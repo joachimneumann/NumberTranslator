@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ArabicNumeralsImplementation: DigitLanguage  {
+class ArabicNumerals: DigitLanguage  {
     override init() {
         super.init()
         name = "الترقيم العرب"

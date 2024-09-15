@@ -7,7 +7,7 @@
 
 import Foundation
 
-class EsperantoImplementation: Group3Language  {
+class Esperanto: Group3Language  {
     override init() {
         super.init()
         name = "Esperanto"

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PolishImplementation: Group3Language  {
+class Polish: Group3Language  {
     override init() {
         super.init()
         name = "Polski"

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class GermanImplementation: Group3Language, GermanParameterProtocol  {
+class German: Group3Language, GermanParameterProtocol  {
     
     var germanCapitalisation: Bool = true
 

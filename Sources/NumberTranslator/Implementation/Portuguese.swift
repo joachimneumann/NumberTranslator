@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PortugueseImplementation: Group3Language  {
+class Portuguese: Group3Language  {
     let variant: Variant
     
     init(variant: Variant) {

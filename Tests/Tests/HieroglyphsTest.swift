@@ -5,17 +5,24 @@ import Testing
 @testable import NumberTranslator
 
 @Test func Hieroglyphs() {
-    let translator = HieroglyphsImplementation()
-    #expect(translator.translate(0).x == "zero unknown")
-    #expect(translator.translate(1).x == translator.symbolOne)
-    #expect(translator.translate(2).x == translator.symbolOne+translator.symbolOne)
-    #expect(translator.translate(3).x == translator.symbolOne+translator.symbolOne+translator.symbolOne)
-    #expect(translator.translate(10).x == translator.symbolTen)
-    #expect(translator.translate(100).x == translator.symbolHundred)
-    #expect(translator.translate(1_000).x == translator.symbolThousand)
-    #expect(translator.translate(4_122).x == translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolHundred+translator.symbolTen+translator.symbolTen+translator.symbolOne+translator.symbolOne)
-    #expect(translator.translate(4_002).x == translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolThousand+translator.symbolOne+translator.symbolOne)
-    #expect(translator.translate(10_000).x == translator.symbolTenThousand)
-    #expect(translator.translate(100_000).x == translator.symbolHundredThousand)
-    #expect(translator.translate(1_000_000).x == translator.symbolMillion)
+    let translator = NumberTranslator()
+    let symbolOne = "\u{133E4}"
+    let symbolTen = "\u{13386}"
+    let symbolHundred = "\u{13362}"
+    let symbolThousand = "\u{131BC}"
+    let symbolTenThousand = "\u{130AD}"
+    let symbolHundredThousand = "\u{13190}"
+    let symbolMillion = "\u{13068}"
+    #expect(translator.translate(0, to: .hieroglyphs).x == "zero unknown")
+    #expect(translator.translate(1, to: .hieroglyphs).x == symbolOne)
+    #expect(translator.translate(2, to: .hieroglyphs).x == symbolOne+symbolOne)
+    #expect(translator.translate(3, to: .hieroglyphs).x == symbolOne+symbolOne+symbolOne)
+    #expect(translator.translate(10, to: .hieroglyphs).x == symbolTen)
+    #expect(translator.translate(100, to: .hieroglyphs).x == symbolHundred)
+    #expect(translator.translate(1_000, to: .hieroglyphs).x == symbolThousand)
+    #expect(translator.translate(4_122, to: .hieroglyphs).x == symbolThousand+symbolThousand+symbolThousand+symbolThousand+symbolHundred+symbolTen+symbolTen+symbolOne+symbolOne)
+    #expect(translator.translate(4_002, to: .hieroglyphs).x == symbolThousand+symbolThousand+symbolThousand+symbolThousand+symbolOne+symbolOne)
+    #expect(translator.translate(10_000, to: .hieroglyphs).x == symbolTenThousand)
+    #expect(translator.translate(100_000, to: .hieroglyphs).x == symbolHundredThousand)
+    #expect(translator.translate(1_000_000, to: .hieroglyphs).x == symbolMillion)
 }

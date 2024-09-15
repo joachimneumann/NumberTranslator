@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HieroglyphsImplementation: GeneralLanguage  {
+class Hieroglyphs: GeneralLanguage  {
     let symbolOne = "\u{133E4}"
     let symbolTen = "\u{13386}"
     let symbolHundred = "\u{13362}"

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class EnglishImplementation: Group3Language, EnglishParameterProtocol {
+class English: Group3Language, EnglishParameterProtocol {
     override init() {
         super.init()
         name = "English"

@@ -6,12 +6,12 @@ Example:
 ```swift
 import NumberTranslator
 
-var translator = EnglishImplementation()
+var translator = English()
 print(translator.translate(103)) // one hundred and three
 translator.englishUseAndAfterHundred = false
 print(translator.translate(103)) // one hundred three
 
-translator = SwahiliImplementation()
+translator = Swahili()
 print(translator.translate(103)) // mia moja na tatu
 ```
 

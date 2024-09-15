@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class SpanishImplementation: Group3Language, SpanishParameterProtocol  {
+class Spanish: Group3Language, SpanishParameterProtocol  {
     
     var spanishPuntoComma: NumberTranslator.SpanishPuntoComma = .coma {
         didSet {

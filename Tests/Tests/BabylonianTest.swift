@@ -5,23 +5,45 @@ import Testing
 @testable import NumberTranslator
 
 @Test func Babylonian() {
-    let translator = BabylonianImplementation()
+    let translator = NumberTranslator()
+    let symbolNone = "\u{00a0}"//  " "
+    let symbolEmptyColumn = "𒑊"
+    let symbolOne = "𒐕"
+    let symbolTwo = "𒐖"
+    let symbolThree = "𒐗"
+    let symbolFour = "𒐘"
+    let symbolFive = "𒐙"
+    let symbolSix = "𒐚"
+    let symbolSeven = "𒐛"
+    let symbolEight = "𒐜"
+    let symbolNine = "𒐝"
+    let symbolTen = "𒌋"
+    let symbolTwenty = "𒎙"
+    let symbolThirty = "𒌍"
+    let symbolForty = "𒐏"
+    let symbolFifty = "𒐐"
 
     translator.babylonianAllowEmptyColumn = false
-    #expect(translator.translate(1).x == translator.symbolOne)
-    #expect(translator.translate(60).x == translator.symbolOne+translator.symbolNone) // 6,0
-    #expect(translator.translate(61).x == translator.symbolOne+translator.symbolOne) // 6,1
-    #expect(translator.translate(147).x == translator.symbolTwo+translator.symbolTwenty+translator.symbolSeven) // 2,27
-    #expect(translator.translate(3661).x == translator.symbolOne+translator.symbolOne+translator.symbolOne) // 1,1,1
-    #expect(translator.translate(21609).x == translator.symbolSix+translator.symbolNone+translator.symbolNine) // 6,0 9.
-    #expect(translator.translate(424000).x ==  translator.symbolOne+translator.symbolFifty+translator.symbolSeven+translator.symbolForty+translator.symbolSix+translator.symbolForty) // 1,57,46,40
+    #expect(translator.translate(1, to: .babylonian).x == symbolOne)
+    #expect(translator.translate(3, to: .babylonian).x == symbolThree)
+    #expect(translator.translate(4, to: .babylonian).x == symbolFour)
+    #expect(translator.translate(5, to: .babylonian).x == symbolFive)
+    #expect(translator.translate(8, to: .babylonian).x == symbolEight)
+    #expect(translator.translate(10, to: .babylonian).x == symbolTen)
+        #expect(translator.translate(30, to: .babylonian).x == symbolThirty)
+    #expect(translator.translate(60, to: .babylonian).x == symbolOne+symbolNone) // 6,0
+    #expect(translator.translate(61, to: .babylonian).x == symbolOne+symbolOne) // 6,1
+    #expect(translator.translate(147, to: .babylonian).x == symbolTwo+symbolTwenty+symbolSeven) // 2,27
+    #expect(translator.translate(3661, to: .babylonian).x == symbolOne+symbolOne+symbolOne) // 1,1,1
+    #expect(translator.translate(21609, to: .babylonian).x == symbolSix+symbolNone+symbolNine) // 6,0 9.
+    #expect(translator.translate(424000, to: .babylonian).x ==  symbolOne+symbolFifty+symbolSeven+symbolForty+symbolSix+symbolForty) // 1,57,46,40
 
     translator.babylonianAllowEmptyColumn = true
-    #expect(translator.translate(1).x == translator.symbolOne)
-    #expect(translator.translate(60).x == translator.symbolOne) // 6,0 but no empty column :(
-    #expect(translator.translate(61).x == translator.symbolOne+translator.symbolOne) // 6,1
-    #expect(translator.translate(147).x == translator.symbolTwo+translator.symbolTwenty+translator.symbolSeven) // 2,27
-    #expect(translator.translate(3661).x == translator.symbolOne+translator.symbolOne+translator.symbolOne) // 1,1,1
-    #expect(translator.translate(21609).x == translator.symbolSix+translator.symbolEmptyColumn+translator.symbolNine) // 6,0 9.
-    #expect(translator.translate(424000).x == translator.symbolOne+translator.symbolFifty+translator.symbolSeven+translator.symbolForty+translator.symbolSix+translator.symbolForty) // 1,57,46,40
+    #expect(translator.translate(1, to: .babylonian).x == symbolOne)
+    #expect(translator.translate(60, to: .babylonian).x == symbolOne) // 6,0 but no empty column :(
+    #expect(translator.translate(61, to: .babylonian).x == symbolOne+symbolOne) // 6,1
+    #expect(translator.translate(147, to: .babylonian).x == symbolTwo+symbolTwenty+symbolSeven) // 2,27
+    #expect(translator.translate(3661, to: .babylonian).x == symbolOne+symbolOne+symbolOne) // 1,1,1
+    #expect(translator.translate(21609, to: .babylonian).x == symbolSix+symbolEmptyColumn+symbolNine) // 6,0 9.
+    #expect(translator.translate(424000, to: .babylonian).x == symbolOne+symbolFifty+symbolSeven+symbolForty+symbolSix+symbolForty) // 1,57,46,40
 }

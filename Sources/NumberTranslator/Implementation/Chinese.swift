@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ChineseImplementation: Group3Language  {
+class Chinese: Group3Language  {
     var secondLast = "零"
     let variant: Variant
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HindiImplementation: DigitLanguage  {
+class Hindi: DigitLanguage  {
     override init() {
         super.init()
         name = "हिंदी"

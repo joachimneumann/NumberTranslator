@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ArmenianImplementation: Group3Language  {
+class Armenian: Group3Language  {
     override init() {
         super.init()
         name = "հայերեն"

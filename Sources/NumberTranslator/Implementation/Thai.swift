@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ThaiImplementation: Group3Language  {
+class Thai: Group3Language  {
     override init() {
         super.init()
         name = "ภาษาไทย"

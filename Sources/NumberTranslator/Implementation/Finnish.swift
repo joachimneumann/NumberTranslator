@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FinnishImplementation: Group3Language  {
+class Finnish: Group3Language  {
 
     override init() {
         super.init()

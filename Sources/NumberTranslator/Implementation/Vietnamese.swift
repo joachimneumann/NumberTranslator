@@ -1,5 +1,5 @@
 //
-//  VietnameseImplementation.swift
+//  Vietnamese.swift
 //  NumberTranslator
 //
 //  Created by Joachim Neumann on 26.08.24.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class VietnameseImplementation: Group3Language, VietnameseParameterProtocol  {
+class Vietnamese: Group3Language, VietnameseParameterProtocol  {
     
     var vietnameseThousand: NumberTranslator.VietnameseThousand = .nghìn
 
