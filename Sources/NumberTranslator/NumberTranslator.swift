@@ -44,16 +44,16 @@ public class NumberTranslator {
 
     public var currentLanguage: Language
     
-    public var englishName: String? {
-        guard let language = dict[currentLanguage] else { return nil }
+    public func englishName(language: Language) -> String? {
+        guard let language = dict[language] else { return nil }
         return language.englishName
     }
-    public var code: String? {
-        guard let language = dict[currentLanguage] else { return nil }
+    public func code(language: Language) -> String? {
+        guard let language = dict[language] else { return nil }
         return language.code
     }
-    public var groupSize: Int {
-        guard let language = dict[currentLanguage] else { return 3 }
+    public func groupSize(language: Language) -> Int {
+        guard let language = dict[language] else { return 3 }
         return language.groupSize
     }
 
