@@ -58,8 +58,8 @@ public class NumberTranslator {
     public var englishUseAndAfterHundred: Bool {
         get {
             guard let language = dict[.english] else { return false }
-            guard let english = language as? EnglishParameterProtocol else { return false }
-            return english.englishUseAndAfterHundred
+            guard let language = language as? EnglishParameterProtocol else { return false }
+            return language.englishUseAndAfterHundred
         }
         set(newValue) {
             guard let language = dict[.english] else { return }
@@ -68,6 +68,34 @@ public class NumberTranslator {
         }
     }
 
+    public var germanCapitalisation: Bool {
+        get {
+            guard let language = dict[.german] else { return false }
+            guard let language = language as? GermanParameterProtocol else { return false }
+            return language.germanCapitalisation
+        }
+        set(newValue) {
+            guard let language = dict[.german] else { return }
+            guard var language = language as? GermanParameterProtocol else { return }
+            language.germanCapitalisation = newValue
+        }
+    }
+    
+    public var babylonianAllowEmptyColumn: Bool {
+        get {
+            guard let language = dict[.babylonian] else { return false }
+            guard let language = language as? BabylonianParameterProtocol else { return false }
+            return language.babylonianAllowEmptyColumn
+        }
+        set(newValue) {
+            guard let language = dict[.babylonian] else { return }
+            guard var language = language as? BabylonianParameterProtocol else { return }
+            language.babylonianAllowEmptyColumn = newValue
+        }
+    }
+
+    
+    
     public enum SpanishPuntoComma: String, CaseIterable {
         case coma
         case punto
@@ -95,6 +123,44 @@ public class NumberTranslator {
         case lẻ
     }
    
+    public var vietnameseThousand: VietnameseThousand {
+        get {
+            guard let language = dict[.vietnamese] else { return .nghìn }
+            guard let language = language as? VietnameseParameterProtocol else { return .nghìn }
+            return language.vietnameseThousand
+        }
+        set(newValue) {
+            guard let language = dict[.vietnamese] else { return }
+            guard var language = language as? VietnameseParameterProtocol else { return }
+            language.vietnameseThousand = newValue
+        }
+    }
+    public var vietnameseSecondLast: VietnameseSecondLast {
+        get {
+            guard let language = dict[.vietnamese] else { return .linh }
+            guard let language = language as? VietnameseParameterProtocol else { return .linh }
+            return language.vietnameseSecondLast
+        }
+        set(newValue) {
+            guard let language = dict[.vietnamese] else { return }
+            guard var language = language as? VietnameseParameterProtocol else { return }
+            language.vietnameseSecondLast = newValue
+        }
+    }
+    public var vietnameseCompact: Bool {
+        get {
+            guard let language = dict[.vietnamese] else { return true }
+            guard let language = language as? VietnameseParameterProtocol else { return true }
+            return language.vietnameseCompact
+        }
+        set(newValue) {
+            guard let language = dict[.vietnamese] else { return }
+            guard var language = language as? VietnameseParameterProtocol else { return }
+            language.vietnameseCompact = newValue
+        }
+    }
+
+    
     /// translate from String
     /// - Parameters:
     ///   - s: the String number
