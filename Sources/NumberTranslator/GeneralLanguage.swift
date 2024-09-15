@@ -89,6 +89,9 @@ class GeneralLanguage {
         return String(i)
     }
     
+    /// translate from Int
+    /// - Parameter i: the number
+    /// - Returns: the translation
     func translate(_ i: Int) -> String {
         if i == 0 && !allowZero { return "zero unknown" }
         var ret: String = ""
@@ -104,9 +107,18 @@ class GeneralLanguage {
         return ret
     }
     
+    /// translate from Float
+    /// - Parameter f: the number
+    /// - Returns: the translation
     func translate(_ f: Float)  -> String { translate(String(f)) }
+    /// translate from Double
+    /// - Parameter d: the number
+    /// - Returns: the translation
     func translate(_ d: Double) -> String { translate(String(d)) }
     
+    /// translate from String
+    /// - Parameter s: the number
+    /// - Returns: the translation
     func translate(_ s: String) -> String {
         if s == "0" && !allowZero { return "zero unknown" }
         // exponent and mantissa part
