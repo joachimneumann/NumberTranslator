@@ -50,6 +50,10 @@ public class NumberTranslator {
         guard let language = dict[currentLanguage] else { return nil }
         return language.code
     }
+    public var groupSize: Int {
+        guard let language = dict[currentLanguage] else { return 3 }
+        return language.groupSize
+    }
 
     public var englishUseAndAfterHundred: Bool {
         get {
