@@ -10,7 +10,7 @@ import Foundation
 /// translate numbers to text in various languages
 public class NumberTranslator {
     
-    public enum NumberTranslatorLanguage: String, CaseIterable {
+    public enum Language: String, CaseIterable {
         case arabicNumerals
         case armenian
         case armenianNumerals
@@ -86,7 +86,7 @@ public class NumberTranslator {
     ///   - s: the String number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ s: String, to: NumberTranslatorLanguage) -> String {
+    public func translate(_ s: String, to: Language) -> String {
         guard let language = dict[to] else {return "error"}
         return language.translate(s)
     }
@@ -95,7 +95,7 @@ public class NumberTranslator {
     ///   - i: the Int number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ i: Int,    to: NumberTranslatorLanguage) -> String {
+    public func translate(_ i: Int,    to: Language) -> String {
         guard let language = dict[to] else {return "error"}
         return language.translate(i)
     }
@@ -104,7 +104,7 @@ public class NumberTranslator {
     ///   - f: the Float number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ f: Float,  to: NumberTranslatorLanguage) -> String {
+    public func translate(_ f: Float,  to: Language) -> String {
         translate(String(f), to: to)
     }
     /// translate from Double
@@ -112,14 +112,14 @@ public class NumberTranslator {
     ///   - d: the Double number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ d: Double, to: NumberTranslatorLanguage) -> String {
+    public func translate(_ d: Double, to: Language) -> String {
         translate(String(d), to: to)
     }
         
-    private var dict: [NumberTranslatorLanguage : GeneralLanguage] = [:]
+    private var dict: [Language : GeneralLanguage] = [:]
     
     public init() {
-        for language in NumberTranslatorLanguage.allCases {
+        for language in Language.allCases {
             switch language {
             case .arabicNumerals:
                 dict[language] = ArabicNumeralsImplementation()
