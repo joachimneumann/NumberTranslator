@@ -9,7 +9,6 @@ import Foundation
 
 /// translate numbers to text in various languages
 public class NumberTranslator {
-    
     public enum Language: String, CaseIterable {
         case arabicNumerals
         case armenian
@@ -41,6 +40,8 @@ public class NumberTranslator {
         case vietnamese
     }
 
+    public var currentLanguage: Language
+    
     public var englishUseAndAfterHundred: Bool {
         get {
             guard let language = dict[.english] else { return false }
@@ -86,8 +87,8 @@ public class NumberTranslator {
     ///   - s: the String number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ s: String, to: Language) -> String {
-        guard let language = dict[to] else {return "error"}
+    public func translate(_ s: String) -> String {
+        guard let language = dict[currentLanguage] else {return "error"}
         return language.translate(s)
     }
     /// translate from Int
@@ -95,8 +96,8 @@ public class NumberTranslator {
     ///   - i: the Int number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ i: Int,    to: Language) -> String {
-        guard let language = dict[to] else {return "error"}
+    public func translate(_ i: Int) -> String {
+        guard let language = dict[currentLanguage] else {return "error"}
         return language.translate(i)
     }
     /// translate from Float
@@ -104,21 +105,22 @@ public class NumberTranslator {
     ///   - f: the Float number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ f: Float,  to: Language) -> String {
-        translate(String(f), to: to)
+    public func translate(_ f: Float) -> String {
+        translate(String(f))
     }
     /// translate from Double
     /// - Parameters:
     ///   - d: the Double number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ d: Double, to: Language) -> String {
-        translate(String(d), to: to)
+    public func translate(_ d: Double) -> String {
+        translate(String(d))
     }
         
     private var dict: [Language : GeneralLanguage] = [:]
     
     public init() {
+        currentLanguage = .english
         for language in Language.allCases {
             switch language {
             case .arabicNumerals:

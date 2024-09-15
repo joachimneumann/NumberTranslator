@@ -1,13 +1,18 @@
 import NumberTranslator
 
 let translator = NumberTranslator()
-print(translator.translate(103, to: .english))        // one hundred and three
-print(translator.translate(103, to: .german))         // Einhundertdrei
-print(translator.translate(103, to: .romanNumerals))  // CIII
+translator.currentLanguage = .english
+print(translator.translate(103)) // one hundred and three
+translator.currentLanguage = .german
+print(translator.translate(103)) // Einhundertdrei
+translator.currentLanguage = .romanNumerals
+print(translator.translate(103)) // CIII
 
+translator.currentLanguage = .english
 translator.englishUseAndAfterHundred = true
-print(translator.translate(103, to: .english)) // one hundred and three
+print(translator.translate(103)) // one hundred and three
 
-print(translator.translate(1.3, to: .spanish)) // uno coma tres
+translator.currentLanguage = .spanish
+print(translator.translate(1.3)) // uno coma tres
 translator.spanishPuntoComma = .punto
-print(translator.translate(1.3, to: .spanish)) // uno punto tres
+print(translator.translate(1.3)) // uno punto tres
