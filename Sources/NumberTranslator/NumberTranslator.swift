@@ -100,8 +100,6 @@ public class NumberTranslator {
         }
     }
 
-    
-    
     public enum SpanishPuntoComma: String, CaseIterable {
         case coma
         case punto
@@ -172,34 +170,45 @@ public class NumberTranslator {
     ///   - s: the String number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ s: String) -> String {
-        guard let language = dict[currentLanguage] else {return "error"}
-        return language.translate(s)
+    public func translate(_ s: String, _ notCurrentLanguage: Language? = nil) -> String {
+        guard let notCurrentLanguage = notCurrentLanguage else {
+            guard let generalLanguage = dict[currentLanguage] else { return "error" }
+            return generalLanguage.translate(s)
+        }
+        guard let generalLanguage = dict[notCurrentLanguage] else { return "error" }
+        return generalLanguage.translate(s)
     }
+    
     /// translate from Int
     /// - Parameters:
     ///   - i: the Int number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ i: Int) -> String {
-        guard let language = dict[currentLanguage] else {return "error"}
-        return language.translate(i)
+    public func translate(_ i: Int, _ notCurrentLanguage: Language? = nil) -> String {
+        guard let notCurrentLanguage = notCurrentLanguage else {
+            guard let generalLanguage = dict[currentLanguage] else { return "error" }
+            return generalLanguage.translate(i)
+        }
+        guard let generalLanguage = dict[notCurrentLanguage] else { return "error" }
+        return generalLanguage.translate(i)
     }
+    
     /// translate from Float
     /// - Parameters:
     ///   - f: the Float number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ f: Float) -> String {
-        translate(String(f))
+    public func translate(_ f: Float, _ notCurrentLanguage: Language? = nil) -> String {
+        translate(String(f), notCurrentLanguage)
     }
+    
     /// translate from Double
     /// - Parameters:
     ///   - d: the Double number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ d: Double) -> String {
-        translate(String(d))
+    public func translate(_ d: Double, _ notCurrentLanguage: Language? = nil) -> String {
+        translate(String(d), notCurrentLanguage)
     }
         
     private var dict: [Language : GeneralLanguage] = [:]
