@@ -9,7 +9,9 @@ import Foundation
 
 /// translate numbers to text in various languages
 public class NumberTranslator {
-    public enum Language: String, CaseIterable {
+    public enum Language: String, CaseIterable, Identifiable {
+        public var id: String { UUID().uuidString }
+        
         case arabicNumerals
         case armenian
         case armenianNumerals
