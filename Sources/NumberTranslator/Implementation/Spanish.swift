@@ -10,7 +10,7 @@ import SwiftUI
 
 class SpanishImplementation: Group3Language, SpanishParameterProtocol  {
     
-    var spanishPuntoComma: Translator.SpanishPuntoComma = .coma {
+    var spanishPuntoComma: NumberTranslator.SpanishPuntoComma = .coma {
         didSet {
             dotString = spanishPuntoComma.rawValue
         }

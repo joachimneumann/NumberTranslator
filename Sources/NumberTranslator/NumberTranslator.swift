@@ -8,11 +8,69 @@
 import Foundation
 
 /// translate numbers to text in various languages
-public class Translator {
+public class NumberTranslator {
+    
+    public enum NumberTranslatorLanguage: String, CaseIterable {
+        case arabicNumerals
+        case armenian
+        case armenianNumerals
+        case babylonian
+        case catalan
+        case financialChinese
+        case simplifiedChinese
+        case traditionalChinese
+        case danish
+        case english
+        case esperanto
+        case finnish
+        case french
+        case german
+        case hindi
+        case hieroglyphs
+        case italian
+        case polish
+        case europeanPortuguese
+        case brazilianPortuguese
+        case romanNumerals
+        case russian
+        case spanish
+        case swahili
+        case thai
+        case thaiNumerals
+        case ukrainian
+        case vietnamese
+    }
+
+    public var englishUseAndAfterHundred: Bool {
+        get {
+            guard let language = dict[.english] else { return false }
+            guard let english = language as? EnglishParameterProtocol else { return false }
+            return english.englishUseAndAfterHundred
+        }
+        set(newValue) {
+            guard let language = dict[.english] else { return }
+            guard var language = language as? EnglishParameterProtocol else { return }
+            language.englishUseAndAfterHundred = newValue
+        }
+    }
+
     public enum SpanishPuntoComma: String, CaseIterable {
         case coma
         case punto
     }
+    public var spanishPuntoComma: SpanishPuntoComma {
+        get {
+            guard let language = dict[.spanish] else { return .coma }
+            guard let language = language as? SpanishParameterProtocol else { return .coma }
+            return language.spanishPuntoComma
+        }
+        set(newValue) {
+            guard let language = dict[.spanish] else { return }
+            guard var language = language as? SpanishParameterProtocol else { return }
+            language.spanishPuntoComma = newValue
+        }
+    }
+
     public enum VietnameseThousand: String, CaseIterable {
         case ngàn
         case nghìn
@@ -22,164 +80,246 @@ public class Translator {
         case linh
         case lẻ
     }
-
    
-    /// the name of the language
-    public var name: String { implementation.name }
-    /// the optional english name of the language
-    public var englishName: String? { implementation.englishName }
-    /// the code of the language, which is used to find a voice
-    public var code: String? { implementation.code }
-    public var groupSize: Int { implementation.groupSize }
-    public func translate(_ s: String) -> String { implementation.translate(s) }
-    public func translate(_ i: Int)    -> String { implementation.translate(i) }
-    public func translate(_ f: Float)  -> String { implementation.translate(f) }
-    public func translate(_ d: Double) -> String { implementation.translate(d) }
+    /// translate from String
+    /// - Parameters:
+    ///   - s: the String number
+    ///   - to: the language
+    /// - Returns: translated number
+    public func translate(_ s: String, to: NumberTranslatorLanguage) -> String {
+        guard let language = dict[to] else {return "error"}
+        return language.translate(s)
+    }
+    /// translate from Int
+    /// - Parameters:
+    ///   - i: the Int number
+    ///   - to: the language
+    /// - Returns: translated number
+    public func translate(_ i: Int,    to: NumberTranslatorLanguage) -> String {
+        guard let language = dict[to] else {return "error"}
+        return language.translate(i)
+    }
+    /// translate from Float
+    /// - Parameters:
+    ///   - f: the Float number
+    ///   - to: the language
+    /// - Returns: translated number
+    public func translate(_ f: Float,  to: NumberTranslatorLanguage) -> String {
+        translate(String(f), to: to)
+    }
+    /// translate from Double
+    /// - Parameters:
+    ///   - d: the Double number
+    ///   - to: the language
+    /// - Returns: translated number
+    public func translate(_ d: Double, to: NumberTranslatorLanguage) -> String {
+        translate(String(d), to: to)
+    }
+        
+    private var dict: [NumberTranslatorLanguage : GeneralLanguage] = [:]
     
-    private var implementation: GeneralLanguage
-    
-    init(_ implementation: GeneralLanguage) {
-        self.implementation = implementation
-    }
-    
-    public var germanCapitalisation: Bool {
-        get {
-            if let selfWithProtocol = self.implementation as? GermanParameterProtocol {
-                selfWithProtocol.germanCapitalisation
-            } else {
-                false
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? GermanParameterProtocol {
-                selfWithProtocol.germanCapitalisation = newValue
-            }
-        }
-    }
-    
-    public var englishUseAndAfterHundred: Bool {
-        get {
-            if let selfWithProtocol = self.implementation as? EnglishParameterProtocol {
-                selfWithProtocol.englishUseAndAfterHundred
-            } else {
-                false
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? EnglishParameterProtocol {
-                selfWithProtocol.englishUseAndAfterHundred = newValue
-            }
-        }
-    }
-    public var babylonianAllowEmptyColumn: Bool {
-        get {
-            if let selfWithProtocol = self.implementation as? BabylonianParameterProtocol {
-                selfWithProtocol.babylonianAllowEmptyColumn
-            } else {
-                false
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? BabylonianParameterProtocol {
-                selfWithProtocol.babylonianAllowEmptyColumn = newValue
-            }
-        }
-    }
-    public var puntoComma: SpanishPuntoComma {
-        get {
-            if let selfWithProtocol = self.implementation as? SpanishParameterProtocol {
-                selfWithProtocol.spanishPuntoComma
-            } else {
-                .punto
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? SpanishParameterProtocol {
-                selfWithProtocol.spanishPuntoComma = newValue
-            }
-        }
-    }
-    public var vietnameseThousand: VietnameseThousand {
-        get {
-            if let selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
-                selfWithProtocol.vietnameseThousand
-            } else {
-                .nghìn
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
-                selfWithProtocol.vietnameseThousand = newValue
-            }
-        }
-    }
-    public var vietnameseSecondLast: VietnameseSecondLast {
-        get {
-            if let selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
-                selfWithProtocol.vietnameseSecondLast
-            } else {
-                .lẻ
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
-                selfWithProtocol.vietnameseSecondLast = newValue
-            }
-        }
-    }
-    public var vietnameseCompact: Bool {
-        get {
-            if let selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
-                selfWithProtocol.vietnameseCompact
-            } else {
-                false
-            }
-        }
-        set(newValue) {
-            if var selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
-                selfWithProtocol.vietnameseCompact = newValue
-            }
-        }
-    }
-}
-
-
-public class Translators {
-    public var list: [Translator] = []
-    private func add(_ language: GeneralLanguage) {
-        list.append(Translator(language))
-    }
     public init() {
-        add(ArabicNumeralsImplementation())
-        add(ArmenianImplementation())
-        add(ArmenianNumeralsImplementation())
-        add(BabylonianImplementation())
-        add(CatalanImplementation())
-        add(ChineseImplementation(variant: ChineseImplementation.Variant.financial))
-        add(ChineseImplementation(variant: ChineseImplementation.Variant.simplified))
-        add(ChineseImplementation(variant: ChineseImplementation.Variant.traditional))
-        add(DanishImplementation())
-        add(EnglishImplementation())
-        add(EsperantoImplementation())
-        add(FinnishImplementation())
-        add(FrenchImplementation())
-        add(GermanImplementation())
-        add(HindiImplementation())
-        add(HieroglyphsImplementation())
-        add(ItalianImplementation())
-        add(PolishImplementation())
-        add(PortugueseImplementation(variant: PortugueseImplementation.Variant.european))
-        add(PortugueseImplementation(variant: PortugueseImplementation.Variant.brazilian))
-        add(RomanNumeralsImplementation())
-        add(RussianImplementation())
-        add(SpanishImplementation())
-        add(SwahiliImplementation())
-        add(ThaiImplementation())
-        add(ThaiNumeralsImplementation())
-        add(UkrainianImplementation())
-        add(VietnameseImplementation())
+        for language in NumberTranslatorLanguage.allCases {
+            switch language {
+            case .arabicNumerals:
+                dict[language] = ArabicNumeralsImplementation()
+            case .armenian:
+                dict[language] = ArmenianImplementation()
+            case .armenianNumerals:
+                dict[language] = ArmenianNumeralsImplementation()
+            case .babylonian:
+                dict[language] = BabylonianImplementation()
+            case .catalan:
+                dict[language] = CatalanImplementation()
+            case .financialChinese:
+                dict[language] = ChineseImplementation(variant: .financial)
+            case .simplifiedChinese:
+                dict[language] = ChineseImplementation(variant: .simplified)
+            case .traditionalChinese:
+                dict[language] = ChineseImplementation(variant: .traditional)
+            case .danish:
+                dict[language] = DanishImplementation()
+            case .english:
+                dict[language] = EnglishImplementation()
+            case .esperanto:
+                dict[language] = EsperantoImplementation()
+            case .finnish:
+                dict[language] = FrenchImplementation()
+            case .french:
+                dict[language] = FrenchImplementation()
+            case .german:
+                dict[language] = GermanImplementation()
+            case .hindi:
+                dict[language] = HindiImplementation()
+            case .hieroglyphs:
+                dict[language] = HieroglyphsImplementation()
+            case .italian:
+                dict[language] = ItalianImplementation()
+            case .polish:
+                dict[language] = PolishImplementation()
+            case .europeanPortuguese:
+                dict[language] = PortugueseImplementation(variant: .european)
+            case .brazilianPortuguese:
+                dict[language] = PortugueseImplementation(variant: .brazilian)
+            case .romanNumerals:
+                dict[language] = RomanNumeralsImplementation()
+            case .russian:
+                dict[language] = RussianImplementation()
+            case .spanish:
+                dict[language] = SpanishImplementation()
+            case .swahili:
+                dict[language] = SwahiliImplementation()
+            case .thai:
+                dict[language] = ThaiImplementation()
+            case .thaiNumerals:
+                dict[language] = ThaiNumeralsImplementation()
+            case .ukrainian:
+                dict[language] = UkrainianImplementation()
+            case .vietnamese:
+                dict[language] = VietnameseImplementation()
+            }
+        }
+//        self.implementation = implementation
     }
+    
+//    public var germanCapitalisation: Bool {
+//        get {
+//            if let selfWithProtocol = self.implementation as? GermanParameterProtocol {
+//                selfWithProtocol.germanCapitalisation
+//            } else {
+//                false
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? GermanParameterProtocol {
+//                selfWithProtocol.germanCapitalisation = newValue
+//            }
+//        }
+//    }
+//    
+//    public var englishUseAndAfterHundred: Bool {
+//        get {
+//            if let selfWithProtocol = self.implementation as? EnglishParameterProtocol {
+//                selfWithProtocol.englishUseAndAfterHundred
+//            } else {
+//                false
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? EnglishParameterProtocol {
+//                selfWithProtocol.englishUseAndAfterHundred = newValue
+//            }
+//        }
+//    }
+//    public var babylonianAllowEmptyColumn: Bool {
+//        get {
+//            if let selfWithProtocol = self.implementation as? BabylonianParameterProtocol {
+//                selfWithProtocol.babylonianAllowEmptyColumn
+//            } else {
+//                false
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? BabylonianParameterProtocol {
+//                selfWithProtocol.babylonianAllowEmptyColumn = newValue
+//            }
+//        }
+//    }
+//    public var puntoComma: SpanishPuntoComma {
+//        get {
+//            if let selfWithProtocol = self.implementation as? SpanishParameterProtocol {
+//                selfWithProtocol.spanishPuntoComma
+//            } else {
+//                .punto
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? SpanishParameterProtocol {
+//                selfWithProtocol.spanishPuntoComma = newValue
+//            }
+//        }
+//    }
+//    public var vietnameseThousand: VietnameseThousand {
+//        get {
+//            if let selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
+//                selfWithProtocol.vietnameseThousand
+//            } else {
+//                .nghìn
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
+//                selfWithProtocol.vietnameseThousand = newValue
+//            }
+//        }
+//    }
+//    public var vietnameseSecondLast: VietnameseSecondLast {
+//        get {
+//            if let selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
+//                selfWithProtocol.vietnameseSecondLast
+//            } else {
+//                .lẻ
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
+//                selfWithProtocol.vietnameseSecondLast = newValue
+//            }
+//        }
+//    }
+//    public var vietnameseCompact: Bool {
+//        get {
+//            if let selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
+//                selfWithProtocol.vietnameseCompact
+//            } else {
+//                false
+//            }
+//        }
+//        set(newValue) {
+//            if var selfWithProtocol = self.implementation as? VietnameseParameterProtocol {
+//                selfWithProtocol.vietnameseCompact = newValue
+//            }
+//        }
+//    }
 }
+
+
+//public class Translators {
+//    public var list: [Translator] = []
+//    private func add(_ language: GeneralLanguage) {
+//        list.append(Translator(language))
+//    }
+//    public init() {
+//        add(ArabicNumeralsImplementation())
+//        add(ArmenianImplementation())
+//        add(ArmenianNumeralsImplementation())
+//        add(BabylonianImplementation())
+//        add(CatalanImplementation())
+//        add(ChineseImplementation(variant: ChineseImplementation.Variant.financial))
+//        add(ChineseImplementation(variant: ChineseImplementation.Variant.simplified))
+//        add(ChineseImplementation(variant: ChineseImplementation.Variant.traditional))
+//        add(DanishImplementation())
+//        add(EnglishImplementation())
+//        add(EsperantoImplementation())
+//        add(FinnishImplementation())
+//        add(FrenchImplementation())
+//        add(GermanImplementation())
+//        add(HindiImplementation())
+//        add(HieroglyphsImplementation())
+//        add(ItalianImplementation())
+//        add(PolishImplementation())
+//        add(PortugueseImplementation(variant: PortugueseImplementation.Variant.european))
+//        add(PortugueseImplementation(variant: PortugueseImplementation.Variant.brazilian))
+//        add(RomanNumeralsImplementation())
+//        add(RussianImplementation())
+//        add(SpanishImplementation())
+//        add(SwahiliImplementation())
+//        add(ThaiImplementation())
+//        add(ThaiNumeralsImplementation())
+//        add(UkrainianImplementation())
+//        add(VietnameseImplementation())
+//    }
+//}
 
 public protocol GermanParameterProtocol {
     var germanCapitalisation: Bool { get set }
@@ -194,11 +334,11 @@ public protocol BabylonianParameterProtocol {
 }
 
 public protocol SpanishParameterProtocol {
-    var spanishPuntoComma: Translator.SpanishPuntoComma { get set }
+    var spanishPuntoComma: NumberTranslator.SpanishPuntoComma { get set }
 }
 
 public protocol VietnameseParameterProtocol {
-    var vietnameseThousand: Translator.VietnameseThousand { get set }
-    var vietnameseSecondLast: Translator.VietnameseSecondLast { get set }
+    var vietnameseThousand: NumberTranslator.VietnameseThousand { get set }
+    var vietnameseSecondLast: NumberTranslator.VietnameseSecondLast { get set }
     var vietnameseCompact: Bool { get set }
 }

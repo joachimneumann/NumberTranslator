@@ -10,9 +10,9 @@ import SwiftUI
 
 class VietnameseImplementation: Group3Language, VietnameseParameterProtocol  {
     
-    var vietnameseThousand: Translator.VietnameseThousand = .nghìn
+    var vietnameseThousand: NumberTranslator.VietnameseThousand = .nghìn
 
-    var vietnameseSecondLast: Translator.VietnameseSecondLast = .lẻ
+    var vietnameseSecondLast: NumberTranslator.VietnameseSecondLast = .lẻ
 
     var vietnameseCompact: Bool = false
     

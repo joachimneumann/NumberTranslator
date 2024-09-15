@@ -107,15 +107,6 @@ class GeneralLanguage {
         return ret
     }
     
-    /// translate from Float
-    /// - Parameter f: the number
-    /// - Returns: the translation
-    func translate(_ f: Float)  -> String { translate(String(f)) }
-    /// translate from Double
-    /// - Parameter d: the number
-    /// - Returns: the translation
-    func translate(_ d: Double) -> String { translate(String(d)) }
-    
     /// translate from String
     /// - Parameter s: the number
     /// - Returns: the translation
