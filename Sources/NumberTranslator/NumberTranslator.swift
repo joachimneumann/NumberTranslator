@@ -44,6 +44,10 @@ public class NumberTranslator {
 
     public var currentLanguage: Language
     
+    public func name(language: Language) -> String {
+        guard let language = dict[language] else { return "" }
+        return language.name
+    }
     public func englishName(language: Language) -> String? {
         guard let language = dict[language] else { return nil }
         return language.englishName
