@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 import glob, os, re
 
+# This script creates swift test files for each language txt file
+# in the Groundtruth folder
+
 def is_number(number):
     is_number = True
     try:
