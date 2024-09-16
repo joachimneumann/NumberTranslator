@@ -1,6 +1,8 @@
 # NumberTranslator
 
-![languages](https://github.com/user-attachments/assets/f0322871-82dc-4d83-9669-3a825017bc1b)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f0322871-82dc-4d83-9669-3a825017bc1b" height="350">
+</p>
 
 NumberTranslator is a Swift Package that allows translating numbers into text in various languages.
 
