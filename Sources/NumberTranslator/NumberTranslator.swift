@@ -8,7 +8,7 @@
 import Foundation
 
 /// translate numbers to text in various languages
-public class NumberTranslator {
+open class NumberTranslator {
 
     var languageImplementation: [Language : GeneralLanguage] = [:]
 
