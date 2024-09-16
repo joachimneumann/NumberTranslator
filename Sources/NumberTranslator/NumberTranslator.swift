@@ -13,34 +13,34 @@ open class NumberTranslator {
     var languageImplementation: [Language : GeneralLanguage] = [:]
 
     public enum Language: String, CaseIterable {
-        case arabicNumerals
-        case armenian
-        case armenianNumerals
-        case babylonian
-        case catalan
-        case financialChinese
-        case simplifiedChinese
-        case traditionalChinese
-        case danish
-        case english
-        case esperanto
-        case finnish
-        case french
-        case german
-        case hindi
-        case hieroglyphs
-        case italian
-        case polish
-        case europeanPortuguese
-        case brazilianPortuguese
-        case romanNumerals
-        case russian
-        case spanish
-        case swahili
-        case thai
-        case thaiNumerals
-        case ukrainian
-        case vietnamese
+        case arabicNumerals = "arabicNumerals"
+        case armenian = "armenian"
+        case armenianNumerals = "armenianNumerals"
+        case babylonian = "babylonian"
+        case catalan = "catalan"
+        case financialChinese = "financialChinese"
+        case simplifiedChinese = "simplifiedChinese"
+        case traditionalChinese = "traditionalChinese"
+        case danish = "danish"
+        case english = "english"
+        case esperanto = "esperanto"
+        case finnish = "finnish"
+        case french = "french"
+        case german = "german"
+        case hindi = "hindi"
+        case hieroglyphs = "hieroglyphs"
+        case italian = "italian"
+        case polish = "polish"
+        case europeanPortuguese = "europeanPortuguese"
+        case brazilianPortuguese = "brazilianPortuguese"
+        case romanNumerals = "romanNumerals"
+        case russian = "russian"
+        case spanish = "spanish"
+        case swahili = "swahili"
+        case thai = "thai"
+        case thaiNumerals = "thaiNumerals"
+        case ukrainian = "ukrainian"
+        case vietnamese = "vietnamese"
     }
     
     public func name(_ language: Language) -> String {
