@@ -15,7 +15,7 @@ print(translator.translate(103, to: .romanNumerals)) // CIII
 ```
 
 ## parameters
-Some languages offer paramtersm for example:
+Some languages offer paramters. For example:
 ```swift
 translator.englishUseAndAfterHundred = false
 print(translator.translate(103, to: .english)) // one hundred three
