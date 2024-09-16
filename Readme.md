@@ -30,6 +30,9 @@ print(translator.translate(1.3, to: .spanish)) // uno punto tres
 ## List of languages
 ArabicNumerals, ArmenianNumerals, Armenian, Babylonian, BrazilianPortuguese, Catalan, Danish, English, Esperanto, EuropeanPortuguese, FinancialChinese, Finnish, French, German, Hieroglyphs, Hindi, Italian, Polish, RomanNumerals, Russian, SimplifiedChinese, Spanish, Swahili, ThaiNumerals, Thai, TraditionalChinese, Ukrainian, Vietnamese
 
+## Testing
+The test of the translations are based on a text file (e.g., [Tests/Groundtruth/english.txt](Tests/Groundtruth/english.txt)).
+The python script [Tests/testsFromGroundtruth.py](Tests/testsFromGroundtruth.py) will read these txt files and create swift test files, for example [Tests/Tests/EnglishTest.swift](Tests/Tests/EnglishTest.swift). These tests are then executed in Xcode.
 
 ## Contribute with bugfixes
 If you find a bug (and there are probably a larger number of bugs), any contributions are welcome.
