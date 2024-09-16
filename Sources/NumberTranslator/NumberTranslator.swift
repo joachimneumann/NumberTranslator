@@ -68,7 +68,7 @@ open class NumberTranslator {
         return language.code
     }
     
-    /// Number of digits in a group, often 3n but 42 for hindi
+    /// Number of digits in a group, often 3, but 42 for hindi
     /// - Parameter language: language enum
     /// - Returns: String with code
     public func groupSize(_ language: Language) -> Int {
