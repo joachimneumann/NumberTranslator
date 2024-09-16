@@ -52,7 +52,7 @@ extension GeneralLanguageProtocol {
             guard allowNegative else { return "negative not allowed" }
             ret =  negativeString + afterNegative + fromUInt(UInt(-i))
         }
-        if let postProcessing = postProcessing {
+        if let postProcessing {
             ret = postProcessing(ret)
         }
         return ret
@@ -89,9 +89,6 @@ class GeneralLanguage {
         return String(i)
     }
     
-    /// translate from Int
-    /// - Parameter i: the number
-    /// - Returns: the translation
     func translate(_ i: Int) -> String {
         if i == 0 && !allowZero { return "zero unknown" }
         var ret: String = ""
@@ -101,15 +98,12 @@ class GeneralLanguage {
             guard allowNegative else { return "negative not allowed" }
             ret =  negativeString + afterNegative + fromUInt(UInt(-i))
         }
-        if let postProcessing = postProcessing {
+        if let postProcessing {
             ret = postProcessing(ret)
         }
         return ret
     }
     
-    /// translate from String
-    /// - Parameter s: the number
-    /// - Returns: the translation
     func translate(_ s: String) -> String {
         if s == "0" && !allowZero { return "zero unknown" }
         // exponent and mantissa part
@@ -135,7 +129,7 @@ class GeneralLanguage {
             ret = translate(integerPartInt)
         }
         
-        if let fractionalPart = fractionalPart {
+        if let fractionalPart {
             var count = 0
             ret += beforeAndAfterDotString + dotString
             for char in fractionalPart {
@@ -150,11 +144,11 @@ class GeneralLanguage {
             }
         }
         
-        if let exponentAsString = exponentAsString {
+        if let exponentAsString {
             ret += exponentString + translate(exponentAsString)
         }
         
-        if let postProcessing = postProcessing {
+        if let postProcessing {
             ret = postProcessing(ret)
         }
         return ret;

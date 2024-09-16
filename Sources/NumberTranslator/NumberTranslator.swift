@@ -11,7 +11,8 @@ import Foundation
 open class NumberTranslator {
 
     var languageImplementation: [Language : GeneralLanguage] = [:]
-
+    
+    /// List of available languages
     public enum Language: String, CaseIterable {
         case arabicNumerals = "arabicNumerals"
         case armenian = "armenian"
@@ -43,23 +44,38 @@ open class NumberTranslator {
         case vietnamese = "vietnamese"
     }
     
+    /// The name of the language (in that language)
+    /// - Parameter language: language enum
+    /// - Returns: String with name, e.g., Deutsch or Tiếng Việt
     public func name(_ language: Language) -> String {
         guard let language = languageImplementation[language] else { return "" }
         return language.name
     }
+    
+    /// Optional english name
+    /// - Parameter language: language enum
+    /// - Returns: String with english name, e.g., Vietnamese
     public func englishName(_ language: Language) -> String? {
         guard let language = languageImplementation[language] else { return nil }
         return language.englishName
     }
+    
+    /// Two letter language code
+    /// - Parameter language: language enum
+    /// - Returns: Code, e.g., vi
     public func code(_ language: Language) -> String? {
         guard let language = languageImplementation[language] else { return nil }
         return language.code
     }
+    
+    /// Number of digits in a group, often 3n but 42 for hindi
+    /// - Parameter language: language enum
+    /// - Returns: String with code
     public func groupSize(_ language: Language) -> Int {
         guard let language = languageImplementation[language] else { return 3 }
         return language.groupSize
     }
-
+    
     public var englishUseAndAfterHundred: Bool {
         get {
             guard let language = languageImplementation[.english] else { return false }
