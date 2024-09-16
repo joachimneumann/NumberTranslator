@@ -14,7 +14,7 @@ print(translator.translate(103, to: .german))        // Einhundertdrei
 print(translator.translate(103, to: .romanNumerals)) // CIII
 ```
 
-## parameters
+## Parameters
 Some languages offer paramters. For example:
 ```swift
 translator.englishUseAndAfterHundred = false
@@ -33,5 +33,5 @@ ArabicNumerals, ArmenianNumerals, Armenian, Babylonian, BrazilianPortuguese, Cat
 If you find a bug (and there are probably a larger number of bugs), any contributions are welcome.
 
 ## How to add a new language
-You are welcome to provide the ground truth for a new language. Look at examples in the folder Tests/Groundtruth, copy for example [Tests/Groundtruth/english.txt](Tests/Groundtruth/english.txt), rename it and fill in the correct strings for the new language.
+You are welcome to provide the ground truth for a new language. Look at examples in the folder [Tests/Groundtruth](Tests/Groundtruth), copy for example [Tests/Groundtruth/english.txt](Tests/Groundtruth/english.txt), rename it and fill in the correct strings for the new language.
 Then crewate a pull request or write me an email at joachim@joachimneumann.com
