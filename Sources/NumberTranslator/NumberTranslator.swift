@@ -12,9 +12,7 @@ open class NumberTranslator {
 
     var languageImplementation: [Language : GeneralLanguage] = [:]
 
-    public enum Language: String, CaseIterable, Identifiable {
-        public var id: String { UUID().uuidString }
-        
+    public enum Language: String, CaseIterable {
         case arabicNumerals
         case armenian
         case armenianNumerals
