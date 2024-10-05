@@ -10,10 +10,13 @@ import Foundation
 /// translate numbers to text in various languages
 open class NumberTranslator {
 
-    var languageImplementation: [Language : GeneralLanguage] = [:]
+    private var languageImplementation: [Language : GeneralLanguage] = [:]
     
     /// List of available languages
-    public enum Language: String, CaseIterable {
+    ///
+    public enum Language: String, CaseIterable, Identifiable {
+        public var id: String { rawValue }
+
         case arabicNumerals = "arabicNumerals"
         case armenian = "armenian"
         case armenianNumerals = "armenianNumerals"
@@ -43,6 +46,38 @@ open class NumberTranslator {
         case ukrainian = "ukrainian"
         case vietnamese = "vietnamese"
     }
+//    public enum Language: String, CaseIterable {
+////        public var id: String { self.rawValue }
+//        
+//        case arabicNumerals = "arabicNumerals"
+//        case armenian = "armenian"
+//        case armenianNumerals = "armenianNumerals"
+//        case babylonian = "babylonian"
+//        case catalan = "catalan"
+//        case financialChinese = "financialChinese"
+//        case simplifiedChinese = "simplifiedChinese"
+//        case traditionalChinese = "traditionalChinese"
+//        case danish = "danish"
+//        case english = "english"
+//        case esperanto = "esperanto"
+//        case finnish = "finnish"
+//        case french = "french"
+//        case german = "german"
+//        case hindi = "hindi"
+//        case hieroglyphs = "hieroglyphs"
+//        case italian = "italian"
+//        case polish = "polish"
+//        case europeanPortuguese = "europeanPortuguese"
+//        case brazilianPortuguese = "brazilianPortuguese"
+//        case romanNumerals = "romanNumerals"
+//        case russian = "russian"
+//        case spanish = "spanish"
+//        case swahili = "swahili"
+//        case thai = "thai"
+//        case thaiNumerals = "thaiNumerals"
+//        case ukrainian = "ukrainian"
+//        case vietnamese = "vietnamese"
+//    }
     
     /// The name of the language (in that language)
     /// - Parameter language: language enum
