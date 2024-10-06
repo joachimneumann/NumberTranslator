@@ -125,7 +125,7 @@ class GeneralLanguage {
             guard allowNegative else { return "negative not allowed" }
             ret = negativeString + afterNegative + _0_9(0)
         } else {
-            guard let integerPartInt = Int(integerPart) else { return "Integer Sign Error" }
+            guard let integerPartInt = Int(integerPart) else { return "too large" }
             ret = translate(integerPartInt)
         }
         
