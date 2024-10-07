@@ -83,13 +83,13 @@ class Group3Language: GeneralLanguage {
             return _100_999(i)
         }
 
-        for exponent: UInt in stride(from: 3, to: 15, by: 3){
+        for exponent: UInt in stride(from: 3, to: 13, by: 3) { // 13 because we can only translate up to 999 trillion
             if i <= (exponent+3).pow10 - 1 {
                 return group(exponent, i.E(exponent), below: i.Ex(exponent))
             }
         }
 
-        return "ERROR in NewLanguageGroup3.read_positive()"
+        return "too large"
     }
     
     func group(_ groupIndex: UInt, _ above: UInt, below: UInt) -> String {

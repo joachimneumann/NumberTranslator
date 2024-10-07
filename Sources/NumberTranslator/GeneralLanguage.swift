@@ -89,11 +89,21 @@ class GeneralLanguage {
         return String(i)
     }
     
+    func stringToInt(_ input: String, min: Int = Int.min, max: Int = Int.max) -> Int? {
+        if let asDouble = Double(input) {
+            if asDouble > Double(Int.min) && asDouble < Double(Int.max) {
+                return Int(input)
+            }
+        }
+        return nil
+    }
+    
     func translate(_ i: Int) -> String {
         if i == 0 && !allowZero { return "zero unknown" }
         var ret: String = ""
         if i >= 0 {
-            ret =  fromUInt(UInt(i))
+            let asUInt = UInt(i)
+            ret =  fromUInt(asUInt)
         } else {
             guard allowNegative else { return "negative not allowed" }
             ret =  negativeString + afterNegative + fromUInt(UInt(-i))
@@ -125,11 +135,11 @@ class GeneralLanguage {
             guard allowNegative else { return "negative not allowed" }
             ret = negativeString + afterNegative + _0_9(0)
         } else {
-            guard let integerPartInt = Int(integerPart) else { return "too large" }
+            guard let integerPartInt = stringToInt(integerPart) else { return "too large" }
             ret = translate(integerPartInt)
         }
         
-        if let fractionalPart {
+        if ret != "too large", let fractionalPart {
             var count = 0
             ret += beforeAndAfterDotString + dotString
             for char in fractionalPart {
