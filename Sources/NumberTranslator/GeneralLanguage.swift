@@ -78,6 +78,7 @@ class GeneralLanguage {
     var beforeAndAfterDotString: String = " "
     var exponentString: String = " EE "
     var postProcessing: ((String) -> String)? = nil
+    var maxLength: Int = 5
 
     let wordSplitter = "\u{200A}" // the SoftHyphen "@\u{00AD}" did not seperate words well
 
@@ -99,6 +100,9 @@ class GeneralLanguage {
     }
     
     func translate(_ i: Int) -> String {
+        if Double(i) > pow(10.0, Double(maxLength)) {
+            return "too large"
+        }
         if i == 0 && !allowZero { return "zero unknown" }
         var ret: String = ""
         if i >= 0 {
@@ -112,6 +116,7 @@ class GeneralLanguage {
             ret = postProcessing(ret)
         }
         return ret
+        
     }
     
     func translate(_ s: String) -> String {
@@ -126,7 +131,9 @@ class GeneralLanguage {
         // integer part and fractional part
         parts = mantissa.components(separatedBy: ".")
         guard parts.count > 0 && parts.count <= 2 else { return "Fraction Error" }
+        
         let integerPart = parts[0]
+        
         let fractionalPart: String? = (parts.count == 2) ? parts[1] : nil
         guard allowFraction || fractionalPart == nil else { return "fractions not known" }
         
@@ -139,24 +146,27 @@ class GeneralLanguage {
             ret = translate(integerPartInt)
         }
         
+        var atTheEnd: String = ""
+        var atTheEndDigits: Int = 0
+        if let exponentAsString {
+            atTheEndDigits = exponentAsString.count + 1
+            atTheEnd = exponentString + translate(exponentAsString)
+        }
+
         if ret != "too large", let fractionalPart {
             var count = 0
             ret += beforeAndAfterDotString + dotString
+            let withDotLength = integerPart.count + 1
             for char in fractionalPart {
-                if count < 10 {
+                if count < maxLength - withDotLength - atTheEndDigits {
                     guard let digit = UInt(String(char)) else { return "Digit Error" }
                     ret += beforeAndAfterDotString + _0_9(digit)
                 }
                 count += 1
             }
-            if count > 10 {
-                ret += "..."
-            }
         }
         
-        if let exponentAsString {
-            ret += exponentString + translate(exponentAsString)
-        }
+        ret += atTheEnd
         
         if let postProcessing {
             ret = postProcessing(ret)
