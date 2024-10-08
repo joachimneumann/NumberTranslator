@@ -18,4 +18,11 @@ import Testing
     let x2 = translator.translate("8888888888888888.44", to: .english)
     #expect(x1 == "too large")
     #expect(x2 == "too large")
+    let x3 = translator.translate("8.8888888888e15", to: .english)
+    #expect(x3 == "eight point eight eight eight eight eight eight eight eight eight eight EE fifteen")
+    let x4 = translator.translate("8.1234567890", to: .english)
+    #expect(x4 == "eight point one two three four five six seven eight nine zero")
+    let x5 = translator.translate("8.1234567890123456", to: .english)
+    #expect(x5 == "eight point one two three four five six seven eight nine zero...")
+
 }

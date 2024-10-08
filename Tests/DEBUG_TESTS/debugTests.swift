@@ -14,7 +14,7 @@ import Testing
     translator.englishUseAndAfterHundred = false
 //    #expect(translator.translate("01428571428571428571428571428571428571429", to: .english).x == "too large")
 //    #expect(translator.translate("0.1428571428571428571428571428571428571429", to: .english).x == "zero point one four two eight five seven one four two eight...")
+    let x3 = translator.translate("8.8888888888e15", to: .english)
     let x1 = translator.translate("8888888888888888", to: .english)
     let x2 = translator.translate("8888888888888888.44", to: .english)
-    let x3 = "D"
 }

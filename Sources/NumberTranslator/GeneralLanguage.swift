@@ -149,7 +149,7 @@ class GeneralLanguage {
                 }
                 count += 1
             }
-            if count >= 10 {
+            if count > 10 {
                 ret += "..."
             }
         }
