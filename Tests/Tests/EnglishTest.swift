@@ -330,4 +330,5 @@ import Testing
     #expect(translator.translate(1_000_000_000_000, to: .english).x == "one trillion")
     #expect(translator.translate(1_000_000_000_003, to: .english).x == "one trillion three")
     #expect(translator.translate(100_000_000_000_000, to: .english).x == "one hundred trillion")
+    #expect(translator.translate("1.3e9", to: .english).x == "one point three times ten to the power of nine")
 }

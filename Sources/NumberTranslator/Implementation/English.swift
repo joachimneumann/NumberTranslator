@@ -19,6 +19,7 @@ class English: Group3Language, EnglishParameterProtocol {
         negativeString = "minus"
         afterNegative = " "
         dotString = "point"
+        exponentString = " times ten to the power of "
     }
     
     var englishUseAndAfterHundred: Bool = true {

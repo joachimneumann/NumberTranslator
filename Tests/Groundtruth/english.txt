@@ -317,3 +317,4 @@ SETTINGS englishUseAndAfterHundred true
 1_000_000_000_000 one trillion
 1_000_000_000_003 one trillion three
 100_000_000_000_000 one hundred trillion
+1.3e9 one point three times ten to the power of nine
