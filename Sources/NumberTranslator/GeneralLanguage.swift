@@ -63,7 +63,7 @@ struct GeneralLanguageStruct: GeneralLanguageProtocol {
     var name: String = "name"
 }
 
-class GeneralLanguage {
+open class GeneralLanguage {
     var name: String = "name"
     var englishName: String? = nil
     var code: String? = nil

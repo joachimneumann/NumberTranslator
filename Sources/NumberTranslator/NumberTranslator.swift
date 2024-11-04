@@ -10,7 +10,7 @@ import Foundation
 /// translate numbers to text in various languages
 open class NumberTranslator {
 
-    private var languageImplementation: [Language : GeneralLanguage] = [:]
+    open var languageImplementation: [Language : GeneralLanguage] = [:]
     var maxLength: Int
     
     /// List of available languages
