@@ -9,6 +9,9 @@ import Foundation
 
 extension String {
     public var x: String {
-        self.replacingOccurrences(of: "\u{200A}", with: "")
+        var ret: String = self
+        ret = ret.replacingOccurrences(of: "Error: ", with: "")
+        ret = ret.replacingOccurrences(of: "\u{200A}", with: "")
+        return ret
     }
 }
