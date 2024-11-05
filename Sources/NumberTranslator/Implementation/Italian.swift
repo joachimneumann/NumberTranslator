@@ -15,8 +15,8 @@ class Italian: Group3Language  {
         negativeString = "meno"
         afterNegative = " "
         dotString = "virgola"
-        before_hundreds = ""
-        after_hundreds = ""
+        before_hundreds = wordSplitter
+        after_hundreds = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {
@@ -89,9 +89,9 @@ class Italian: Group3Language  {
         if ret.hasSuffix("tre") {
             ret = ret.replacingOccurrences(of: "tre", with: "tré")
         }
-        ret = ret.replacingOccurrences(of: "oott", with: "ott")
-        ret = ret.replacingOccurrences(of: "oundici", with: "undici")
-        ret = ret.replacingOccurrences(of: "otrédici", with: "otredici")
+        ret = ret.replacingOccurrences(of: "o"+wordSplitter+"ott", with: "ott")
+        ret = ret.replacingOccurrences(of: "o"+wordSplitter+"undici", with: "undici")
+        ret = ret.replacingOccurrences(of: "o"+wordSplitter+"trédici", with: "o"+wordSplitter+"tredici")
         return ret
     }
     
@@ -132,8 +132,8 @@ class Italian: Group3Language  {
             before_groupName = " "
             after_groupName = " "
         } else {
-            before_groupName = ""
-            after_groupName = ""
+            before_groupName = wordSplitter
+            after_groupName = wordSplitter
         }
         return super.group(groupIndex, above, below: below)
     }

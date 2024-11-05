@@ -19,7 +19,7 @@ class Chinese: Group3Language  {
         code = "zh"
         use_single_hundreds = true
         use_single_group = true
-        before_hundreds = ""
+        before_hundreds = wordSplitter
         negativeString = "负"
         dotString = "点"
         exponentString = " 乘以 十的 "

@@ -125,14 +125,14 @@ class German: Group3Language, GermanParameterProtocol  {
     }
     
     override func group(_ groupIndex: UInt, _ above: UInt, below: UInt) -> String {
-        after_groupName = ""
+        after_groupName = wordSplitter
         if groupIndex == 6 || groupIndex == 9 {
             after_groupName = " und "
         } else if groupIndex > 9 {
             after_groupName = " "
         }
         var ret = super.group(groupIndex, above, below: below)
-        ret = ret.replacingOccurrences(of: "einstausend", with: "eintausend")
+        ret = ret.replacingOccurrences(of: "eins"+wordSplitter+"tausend", with: "ein"+wordSplitter+"tausend")
         return ret
     }
     

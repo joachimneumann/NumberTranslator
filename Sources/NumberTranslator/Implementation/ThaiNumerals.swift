@@ -13,7 +13,7 @@ class ThaiNumerals: DigitLanguage  {
         name = "แบบดั้งเดิม"
         englishName = "Thai Numerals"
         code = "th"
-        beforeAndAfterDotString = ""
+        beforeAndAfterDotString = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {

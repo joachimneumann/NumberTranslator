@@ -18,7 +18,7 @@ class Polish: Group3Language  {
         dotString = "przecinek"
         exponentString = " razy dziesięć do potęgi "
         after_hundreds = " "
-        before_hundreds = ""
+        before_hundreds = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {
@@ -75,7 +75,7 @@ class Polish: Group3Language  {
         var ret = super._100_999(i)
         let hundreds: UInt = i / 100
         if hundreds == 2 {
-            ret = ret.replacingOccurrences(of: "dwasta", with: "dwieście")
+            ret = ret.replacingOccurrences(of: "dwa"+wordSplitter+"sta", with: "dwieście")
         }
         return ret
     }

@@ -16,8 +16,8 @@ class Swahili: Group3Language  {
         _20_99_connector = " na "
         afterNegative = " "
         dotString = "nukta"
-        before_hundreds = ""
-        after_hundreds = ""
+        before_hundreds = wordSplitter
+        after_hundreds = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {

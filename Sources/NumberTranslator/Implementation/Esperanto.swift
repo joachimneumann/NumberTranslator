@@ -16,7 +16,7 @@ class Esperanto: Group3Language  {
         negativeString = "minus"
         afterNegative = " "
         dotString = "kaj"
-        before_hundreds = ""
+        before_hundreds = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {

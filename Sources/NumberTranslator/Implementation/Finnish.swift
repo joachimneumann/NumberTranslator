@@ -18,8 +18,8 @@ class Finnish: Group3Language  {
         negativeString = "miinus"
         afterNegative = " "
         dotString = "pilkku"
-        before_hundreds = ""
-        after_hundreds = ""
+        before_hundreds = wordSplitter
+        after_hundreds = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {
@@ -106,8 +106,8 @@ class Finnish: Group3Language  {
             before_groupName = " "
             after_groupName = " "
         } else {
-            before_groupName = ""
-            after_groupName = ""
+            before_groupName = wordSplitter
+            after_groupName = wordSplitter
         }
         return super.group(groupIndex, above, below: below)
     }

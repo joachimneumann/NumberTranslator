@@ -15,11 +15,11 @@ class Portuguese: Group3Language  {
         super.init()
         name = variant.rawValue
         code = "pt"
-        before_hundreds = ""
+        before_hundreds = wordSplitter
         _20_99_connector = " e "
         negativeString = "menos"
         dotString = "vírgula"
-        before_hundreds = ""
+        before_hundreds = wordSplitter
         after_hundreds = " e "
         before_groupName = " "
         after_groupName = " e "    }
@@ -77,9 +77,9 @@ class Portuguese: Group3Language  {
         let hundreds: UInt = i / 100
         let below: UInt = i - hundreds * 100
         if hundreds == 1 && below == 0 { return "cem" }
-        ret = ret.replacingOccurrences(of: "doiscentos", with: "duzentos")
-        ret = ret.replacingOccurrences(of: "trêscentos", with: "trezentos")
-        ret = ret.replacingOccurrences(of: "cincocentos", with: "quinhentos")
+        ret = ret.replacingOccurrences(of: "dois"+wordSplitter+"centos", with: "duzentos")
+        ret = ret.replacingOccurrences(of: "três"+wordSplitter+"centos", with: "trezentos")
+        ret = ret.replacingOccurrences(of: "cinco"+wordSplitter+"centos", with: "quinhentos")
         return ret
     }
     

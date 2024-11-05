@@ -13,7 +13,7 @@ class ArabicNumerals: DigitLanguage  {
         name = "الترقيم العرب"
         englishName = "Arabic Numerals"
         code = "ar"
-        beforeAndAfterDotString = ""
+        beforeAndAfterDotString = wordSplitter
     }
 
     override func _0_9(_ i: UInt) -> String {

@@ -18,12 +18,12 @@ class Thai: Group3Language  {
         dotString = "จุด"
         use_single_hundreds = true
         use_single_group = true
-        before_hundreds = ""
-        after_hundreds = ""
-        before_groupName = ""
-        after_groupName = ""
-        afterNegative = ""
-        beforeAndAfterDotString = ""
+        before_hundreds = wordSplitter
+        after_hundreds = wordSplitter
+        before_groupName = wordSplitter
+        after_groupName = wordSplitter
+        afterNegative = wordSplitter
+        beforeAndAfterDotString = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {

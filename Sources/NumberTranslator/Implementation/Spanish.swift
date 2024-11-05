@@ -25,7 +25,7 @@ class Spanish: Group3Language, SpanishParameterProtocol  {
         afterNegative = " "
         dotString = "coma"
         exponentString = " por diez elevado a "
-        before_hundreds = ""
+        before_hundreds = wordSplitter
     }
     
     override func _0_9(_ i: UInt) -> String {
@@ -93,9 +93,9 @@ class Spanish: Group3Language, SpanishParameterProtocol  {
         if hundreds == 1 && below == 0 {
             ret = ret.replacingOccurrences(of: "ciento", with: "cien")
         }
-        ret = ret.replacingOccurrences(of: "cincocientos", with: "quinientos")
-        ret = ret.replacingOccurrences(of: "sietecientos", with: "setecientos")
-        ret = ret.replacingOccurrences(of: "nuevecientos", with: "novecientos")
+        ret = ret.replacingOccurrences(of: "cinco"+wordSplitter+"cientos", with: "quinientos")
+        ret = ret.replacingOccurrences(of: "siete"+wordSplitter+"cientos", with: "setecientos")
+        ret = ret.replacingOccurrences(of: "nueve"+wordSplitter+"cientos", with: "novecientos")
         return ret
     }
 
