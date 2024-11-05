@@ -21,10 +21,10 @@ class German: Group3Language, GermanParameterProtocol  {
         dotString = "Komma"
         exponentString = "mal zehn hoch"
         _20_99_connector = wordSplitter + "und"
-        after_hundreds = ""
-        before_hundreds = ""
-        before_groupName = ""
-        after_groupName = ""
+        after_hundreds = wordSplitter
+        before_hundreds = wordSplitter
+        before_groupName = wordSplitter
+        after_groupName = wordSplitter
         postProcessing = germanPostProcessing
     }
      
