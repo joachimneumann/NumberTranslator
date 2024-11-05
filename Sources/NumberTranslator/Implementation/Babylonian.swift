@@ -37,6 +37,7 @@ class Babylonian: GeneralLanguage, BabylonianParameterProtocol {
     override init() {
         super.init()
         name = "Babylonian"
+        allowZero = false
         allowNegative = false
         allowFraction = false
         allowExponent = false
