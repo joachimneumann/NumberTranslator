@@ -10,12 +10,12 @@ import Foundation
 /// translate numbers to text in various languages
 open class NumberTranslator {
 
-    open var languageImplementation: [Language : GeneralLanguage] = [:]
+    open var languageImplementation: [LanguageEnum : GeneralLanguage] = [:]
     var maxLength: Int
     
     /// List of available languages
     ///
-    public enum Language: String, CaseIterable, Identifiable {
+    public enum LanguageEnum: String, CaseIterable, Identifiable {
         public var id: String { rawValue }
         case arabicNumerals = "arabicNumerals"
         case armenian = "armenian"
@@ -50,7 +50,7 @@ open class NumberTranslator {
     /// The name of the language (in that language)
     /// - Parameter language: language enum
     /// - Returns: String with name, e.g., Deutsch or Tiếng Việt
-    public func name(_ language: Language) -> String {
+    public func name(_ language: LanguageEnum) -> String {
         guard let language = languageImplementation[language] else { return "" }
         return language.name
     }
@@ -58,7 +58,7 @@ open class NumberTranslator {
     /// Optional english name
     /// - Parameter language: language enum
     /// - Returns: String with english name, e.g., Vietnamese
-    public func englishName(_ language: Language) -> String? {
+    public func englishName(_ language: LanguageEnum) -> String? {
         guard let language = languageImplementation[language] else { return nil }
         return language.englishName
     }
@@ -66,7 +66,7 @@ open class NumberTranslator {
     /// Two letter language code
     /// - Parameter language: language enum
     /// - Returns: Code, e.g., vi
-    public func code(_ language: Language) -> String? {
+    public func code(_ language: LanguageEnum) -> String? {
         guard let language = languageImplementation[language] else { return nil }
         return language.code
     }
@@ -74,24 +74,25 @@ open class NumberTranslator {
     /// Number of digits in a group, often 3, but 42 for hindi
     /// - Parameter language: language enum
     /// - Returns: String with code
-    public func groupSize(_ language: Language) -> Int {
+    public func groupSize(_ language: LanguageEnum) -> Int {
         guard let language = languageImplementation[language] else { return 3 }
         return language.groupSize
     }
     
     public var englishUseAndAfterHundred: Bool {
         get {
-            guard let language = languageImplementation[.english] else { return false }
-            guard let language = language as? EnglishParameterProtocol else { return false }
-            return language.englishUseAndAfterHundred
+            if let english = languageImplementation[.english] as? English {
+                return english.englishUseAndAfterHundred
+            } else {
+                return false
+            }
         }
         set(newValue) {
-            guard let language = languageImplementation[.english] else { return }
-            guard var language = language as? EnglishParameterProtocol else { return }
-            language.englishUseAndAfterHundred = newValue
+            if let english = languageImplementation[.english] as? English {
+                return english.englishUseAndAfterHundred = newValue
+            }
         }
     }
-
     public var germanCapitalisation: Bool {
         get {
             guard let language = languageImplementation[.german] else { return false }
@@ -188,7 +189,7 @@ open class NumberTranslator {
     ///   - s: the String number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ s: String, to language: Language) -> String {
+    public func translate(_ s: String, to language: LanguageEnum) -> String {
         guard let generalLanguage = languageImplementation[language] else { return "error" }
         generalLanguage.maxLength = maxLength
         return generalLanguage.translate(s)
@@ -199,7 +200,7 @@ open class NumberTranslator {
     ///   - i: the Int number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ i: Int, to language: Language) -> String {
+    public func translate(_ i: Int, to language: LanguageEnum) -> String {
         guard let generalLanguage = languageImplementation[language] else { return "error" }
         generalLanguage.maxLength = maxLength
         return generalLanguage.translate(i)
@@ -210,7 +211,7 @@ open class NumberTranslator {
     ///   - f: the Float number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ f: Float, to language: Language) -> String {
+    public func translate(_ f: Float, to language: LanguageEnum) -> String {
         translate(String(f), to: language)
     }
     
@@ -219,14 +220,14 @@ open class NumberTranslator {
     ///   - d: the Double number
     ///   - to: the language
     /// - Returns: translated number
-    public func translate(_ d: Double, to language: Language) -> String {
+    public func translate(_ d: Double, to language: LanguageEnum) -> String {
         translate(String(d), to: language)
     }
         
     
     public init(maxLength: Int = 30) {
         self.maxLength = maxLength
-        for languageEnum in Language.allCases {
+        for languageEnum in LanguageEnum.allCases {
             switch languageEnum {
             case .arabicNumerals:
                 languageImplementation[languageEnum] = ArabicNumerals()
@@ -291,10 +292,6 @@ open class NumberTranslator {
 
 public protocol GermanParameterProtocol {
     var germanCapitalisation: Bool { get set }
-}
-
-public protocol EnglishParameterProtocol {
-    var englishUseAndAfterHundred: Bool { get set }
 }
 
 public protocol BabylonianParameterProtocol {

@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import SwiftUI
 
-class English: Group3Language, EnglishParameterProtocol {
+class English: Group3Language {
     override init() {
         super.init()
         name = "English"
@@ -20,11 +19,16 @@ class English: Group3Language, EnglishParameterProtocol {
         afterNegative = " "
         dotString = "point"
         exponentString = " times ten to the power of "
+        after_hundreds = UserDefaults.standard.bool(forKey: "englishUseAndAfterHundred") ? " and " : " "
     }
     
-    var englishUseAndAfterHundred: Bool = true {
-        didSet {
-            after_hundreds = englishUseAndAfterHundred ? " and " : " "
+    var englishUseAndAfterHundred: Bool {
+        get {
+            UserDefaults.standard.bool(forKey: "englishUseAndAfterHundred")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "englishUseAndAfterHundred")
+            after_hundreds = newValue ? " and " : " "
         }
     }
      

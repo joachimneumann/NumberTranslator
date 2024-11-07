@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 class Spanish: Group3Language, SpanishParameterProtocol  {
     

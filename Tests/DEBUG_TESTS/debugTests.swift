@@ -10,8 +10,9 @@ import Testing
 
 @Test func debugTests() {
     let translator = NumberTranslator()
-    
-    translator.englishUseAndAfterHundred = false
+    if let languageImplementation = translator.languageImplementation[.english] as? English {
+        languageImplementation.englishUseAndAfterHundred = false
+    }
 //    #expect(translator.translate("01428571428571428571428571428571428571429", to: .english).x == "too large")
 //    #expect(translator.translate("0.1428571428571428571428571428571428571429", to: .english).x == "zero point one four two eight five seven one four two eight...")
     let lll = translator.translate("0.1428571428571428571428571428571428571429", to: .english)
