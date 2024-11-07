@@ -21,14 +21,14 @@ class RomanNumerals: GeneralLanguage  {
     
     override func fromUInt(_ i: UInt) -> String {
         if i <= 3_999 {
-            return romanUpTp3999(i)+wordSplitter
+            return romanUpTp3999(i)
         } else {
             if i <= 3_999_999 {
                 let above_thousand = i / 1000
                 let below_thousand = i - above_thousand * 1000
-                var ret = romanUpTp3999(above_thousand) + " OVERLINE"
+                var ret = romanUpTp3999(above_thousand) + "_OVERLINE_"
                 if below_thousand > 0 {
-                    ret += " " + romanUpTp3999(below_thousand)
+                    ret += wordSplitter + romanUpTp3999(below_thousand)
                 }
                 return ret
             }

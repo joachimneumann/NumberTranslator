@@ -131,9 +131,9 @@ class ArmenianNumerals: GeneralLanguage  {
             if i <= 99_999_999 {
                 let above_tenthousand = i / 10_000
                 let below_tenthousand = i - above_tenthousand * 10_000
-                var ret = armenianUpTo9999(above_tenthousand) + " OVERLINE"
+                var ret = armenianUpTo9999(above_tenthousand) + "_OVERLINE_"
                 if below_tenthousand > 0 {
-                    ret += " " + armenianUpTo9999(below_tenthousand)
+                    ret += wordSplitter + armenianUpTo9999(below_tenthousand)
                 }
                 return ret
             }

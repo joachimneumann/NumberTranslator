@@ -27,15 +27,15 @@ import Testing
     #expect(translator.translate(2004, to: .armenianNumerals).x == "ՍԴ")
     #expect(translator.translate(2_222, to: .armenianNumerals).x == "ՍՄԻԲ")
     #expect(translator.translate(9_999, to: .armenianNumerals).x == "ՔՋՂԹ")
-    #expect(translator.translate(10_000, to: .armenianNumerals).x == "Ա OVERLINE")
-    #expect(translator.translate(9_000_000, to: .armenianNumerals).x == "Ջ OVERLINE")
-    #expect(translator.translate(11_431_255, to: .armenianNumerals).x == "ՌՃԽԳ OVERLINE ՌՄԾԵ")
+    #expect(translator.translate(10_000, to: .armenianNumerals).x == "Ա_OVERLINE_")
+    #expect(translator.translate(9_000_000, to: .armenianNumerals).x == "Ջ_OVERLINE_")
+    #expect(translator.translate(11_431_255, to: .armenianNumerals).x == "ՌՃԽԳ_OVERLINE_ՌՄԾԵ")
 
     let temp1 = 11_43*10_000+1_255
-    #expect(translator.translate(temp1, to: .armenianNumerals).x == "ՌՃԽԳ OVERLINE ՌՄԾԵ")
+    #expect(translator.translate(temp1, to: .armenianNumerals).x == "ՌՃԽԳ_OVERLINE_ՌՄԾԵ")
 
     let temp2 = 9_999*10_000+9_999
-    #expect(translator.translate(temp2, to: .armenianNumerals).x == "ՔՋՂԹ OVERLINE ՔՋՂԹ")
+    #expect(translator.translate(temp2, to: .armenianNumerals).x == "ՔՋՂԹ_OVERLINE_ՔՋՂԹ")
 
     let temp3 = 9_999*10_000+9_999+1
     #expect(translator.translate(temp3, to: .armenianNumerals).x == "too large")
