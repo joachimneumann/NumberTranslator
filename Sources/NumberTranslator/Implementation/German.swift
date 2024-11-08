@@ -7,10 +7,8 @@
 
 import Foundation
 
-class German: Group3Language, GermanParameterProtocol  {
+class German: Group3Language  {
     
-    var germanCapitalisation: Bool = true
-
     override init() {
         super.init()
         name = "Deutsch"
@@ -27,6 +25,18 @@ class German: Group3Language, GermanParameterProtocol  {
         postProcessing = germanPostProcessing
     }
      
+    var germanCapitalisation: Bool {
+        get {
+            if UserDefaults.standard.object(forKey: #function) == nil {
+                UserDefaults.standard.set(true, forKey: #function)
+            }
+            return UserDefaults.standard.bool(forKey: #function)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: #function)
+        }
+    }
+    
     override func _0_9(_ i: UInt) -> String {
         switch i {
         case 0: return "null"

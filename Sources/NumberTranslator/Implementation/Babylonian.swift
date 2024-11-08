@@ -7,9 +7,19 @@
 
 import Foundation
 
-class Babylonian: GeneralLanguage, BabylonianParameterProtocol {
+class Babylonian: GeneralLanguage {
 
-    var babylonianAllowEmptyColumn: Bool = false
+    var babylonianAllowEmptyColumn: Bool {
+        get {
+            if UserDefaults.standard.object(forKey: #function) == nil {
+                UserDefaults.standard.set(true, forKey: #function)
+            }
+            return UserDefaults.standard.bool(forKey: #function)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: #function)
+        }
+    }
 
     let symbolNone = "\u{00a0}"//  " "
     let symbolEmptyColumn = "𒑊"

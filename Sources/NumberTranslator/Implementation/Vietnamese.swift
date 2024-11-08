@@ -7,13 +7,53 @@
 
 import Foundation
 
-class Vietnamese: Group3Language, VietnameseParameterProtocol  {
+class Vietnamese: Group3Language  {
     
-    var vietnameseThousand: NumberTranslator.VietnameseThousand = .nghìn
+    var vietnameseThousand: NumberTranslator.VietnameseThousand {
+        get {
+            if UserDefaults.standard.object(forKey: #function) == nil {
+                UserDefaults.standard.set(NumberTranslator.VietnameseThousand.nghìn.rawValue, forKey: #function)
+            }
+            if let rawValue = UserDefaults.standard.string(forKey: #function) {
+                if let secondLast = NumberTranslator.VietnameseThousand(rawValue: rawValue) {
+                    return secondLast
+                }
+            }
+            return NumberTranslator.VietnameseThousand.nghìn
+        }
+        set {
+            UserDefaults.standard.set(newValue.rawValue, forKey: #function)
+        }
+    }
 
-    var vietnameseSecondLast: NumberTranslator.VietnameseSecondLast = .lẻ
-
-    var vietnameseCompact: Bool = false
+    var vietnameseSecondLast: NumberTranslator.VietnameseSecondLast {
+        get {
+            if UserDefaults.standard.object(forKey: #function) == nil {
+                UserDefaults.standard.set(NumberTranslator.VietnameseSecondLast.lẻ.rawValue, forKey: #function)
+            }
+            if let rawValue = UserDefaults.standard.string(forKey: #function) {
+                if let secondLast = NumberTranslator.VietnameseSecondLast(rawValue: rawValue) {
+                    return secondLast
+                }
+            }
+            return NumberTranslator.VietnameseSecondLast.lẻ
+        }
+        set {
+            UserDefaults.standard.set(newValue.rawValue, forKey: #function)
+        }
+    }
+    
+    var vietnameseCompact: Bool {
+        get {
+            if UserDefaults.standard.object(forKey: #function) == nil {
+                UserDefaults.standard.set(false, forKey: #function)
+            }
+            return UserDefaults.standard.bool(forKey: #function)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: #function)
+        }
+    }
     
     override init() {
         super.init()

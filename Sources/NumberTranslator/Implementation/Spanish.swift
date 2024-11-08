@@ -7,14 +7,26 @@
 
 import Foundation
 
-class Spanish: Group3Language, SpanishParameterProtocol  {
+class Spanish: Group3Language  {
     
-    var spanishPuntoComma: NumberTranslator.SpanishPuntoComma = .coma {
-        didSet {
-            dotString = spanishPuntoComma.rawValue
+    var spanishPuntoComa: NumberTranslator.SpanishPuntoComa {
+        get {
+            if UserDefaults.standard.object(forKey: #function) == nil {
+                UserDefaults.standard.set(NumberTranslator.SpanishPuntoComa.coma.rawValue, forKey: #function)
+            }
+            if let rawValue = UserDefaults.standard.string(forKey: #function) {
+                if let coma = NumberTranslator.SpanishPuntoComa(rawValue: rawValue) {
+                    return coma
+                }
+            }
+            return NumberTranslator.SpanishPuntoComa.coma
+        }
+        set {
+            print("set spanishPuntoComa: \(newValue.rawValue)")
+            UserDefaults.standard.set(newValue.rawValue, forKey: #function)
         }
     }
-
+    
     override init() {
         super.init()
         name = "Español"
@@ -22,7 +34,7 @@ class Spanish: Group3Language, SpanishParameterProtocol  {
         _20_99_connector = " y "
         negativeString = "menos"
         afterNegative = " "
-        dotString = "coma"
+        dotString = spanishPuntoComa.rawValue
         exponentString = " por diez elevado a "
         before_hundreds = wordSplitter
     }

@@ -79,63 +79,49 @@ open class NumberTranslator {
         return language.groupSize
     }
     
+    
+    ///
+    /// English
+    ///
     public var englishUseAndAfterHundred: Bool {
         get {
-            if let english = languageImplementation[.english] as? English {
-                return english.englishUseAndAfterHundred
+            if let language = languageImplementation[.english] as? English {
+                return language.englishUseAndAfterHundred
             } else {
                 return false
             }
         }
         set(newValue) {
-            if let english = languageImplementation[.english] as? English {
-                return english.englishUseAndAfterHundred = newValue
+            if let language = languageImplementation[.english] as? English {
+                return language.englishUseAndAfterHundred = newValue
             }
         }
     }
+    
+    
+    ///
+    /// German
+    ///
     public var germanCapitalisation: Bool {
         get {
-            guard let language = languageImplementation[.german] else { return false }
-            guard let language = language as? GermanParameterProtocol else { return false }
-            return language.germanCapitalisation
+            if let language = languageImplementation[.german] as? German {
+                return language.germanCapitalisation
+            } else {
+                return false
+            }
         }
         set(newValue) {
-            guard let language = languageImplementation[.german] else { return }
-            guard var language = language as? GermanParameterProtocol else { return }
-            language.germanCapitalisation = newValue
+            if let language = languageImplementation[.german] as? German {
+                return language.germanCapitalisation = newValue
+            }
         }
     }
     
-    public var babylonianAllowEmptyColumn: Bool {
-        get {
-            guard let language = languageImplementation[.babylonian] else { return false }
-            guard let language = language as? BabylonianParameterProtocol else { return false }
-            return language.babylonianAllowEmptyColumn
-        }
-        set(newValue) {
-            guard let language = languageImplementation[.babylonian] else { return }
-            guard var language = language as? BabylonianParameterProtocol else { return }
-            language.babylonianAllowEmptyColumn = newValue
-        }
-    }
+    
 
-    public enum SpanishPuntoComma: String, CaseIterable {
-        case coma
-        case punto
-    }
-    public var spanishPuntoComma: SpanishPuntoComma {
-        get {
-            guard let language = languageImplementation[.spanish] else { return .coma }
-            guard let language = language as? SpanishParameterProtocol else { return .coma }
-            return language.spanishPuntoComma
-        }
-        set(newValue) {
-            guard let language = languageImplementation[.spanish] else { return }
-            guard var language = language as? SpanishParameterProtocol else { return }
-            language.spanishPuntoComma = newValue
-        }
-    }
-
+    ///
+    /// Vietnamese
+    ///
     public enum VietnameseThousand: String, CaseIterable {
         case ngàn
         case nghìn
@@ -148,41 +134,110 @@ open class NumberTranslator {
    
     public var vietnameseThousand: VietnameseThousand {
         get {
-            guard let language = languageImplementation[.vietnamese] else { return .nghìn }
-            guard let language = language as? VietnameseParameterProtocol else { return .nghìn }
-            return language.vietnameseThousand
+            if let language = languageImplementation[.vietnamese] as? Vietnamese {
+                return language.vietnameseThousand
+            } else {
+                return VietnameseThousand.nghìn
+            }
         }
         set(newValue) {
-            guard let language = languageImplementation[.vietnamese] else { return }
-            guard var language = language as? VietnameseParameterProtocol else { return }
-            language.vietnameseThousand = newValue
-        }
-    }
-    public var vietnameseSecondLast: VietnameseSecondLast {
-        get {
-            guard let language = languageImplementation[.vietnamese] else { return .linh }
-            guard let language = language as? VietnameseParameterProtocol else { return .linh }
-            return language.vietnameseSecondLast
-        }
-        set(newValue) {
-            guard let language = languageImplementation[.vietnamese] else { return }
-            guard var language = language as? VietnameseParameterProtocol else { return }
-            language.vietnameseSecondLast = newValue
-        }
-    }
-    public var vietnameseCompact: Bool {
-        get {
-            guard let language = languageImplementation[.vietnamese] else { return true }
-            guard let language = language as? VietnameseParameterProtocol else { return true }
-            return language.vietnameseCompact
-        }
-        set(newValue) {
-            guard let language = languageImplementation[.vietnamese] else { return }
-            guard var language = language as? VietnameseParameterProtocol else { return }
-            language.vietnameseCompact = newValue
+            if let language = languageImplementation[.vietnamese] as? Vietnamese {
+                return language.vietnameseThousand = newValue
+            }
         }
     }
 
+    public var vietnameseSecondLast: VietnameseSecondLast {
+        get {
+            if let language = languageImplementation[.vietnamese] as? Vietnamese {
+                return language.vietnameseSecondLast
+            } else {
+                return VietnameseSecondLast.lẻ
+            }
+        }
+        set(newValue) {
+            if let language = languageImplementation[.vietnamese] as? Vietnamese {
+                return language.vietnameseSecondLast = newValue
+            }
+        }
+    }
+
+    public var vietnameseCompact: Bool {
+        get {
+            if let language = languageImplementation[.vietnamese] as? Vietnamese {
+                return language.vietnameseCompact
+            } else {
+                return false
+            }
+        }
+        set(newValue) {
+            if let language = languageImplementation[.vietnamese] as? Vietnamese {
+                return language.vietnameseCompact = newValue
+            }
+        }
+    }
+
+    
+    ///
+    /// Babylonian
+    ///
+    public var babylonianAllowEmptyColumn: Bool {
+        get {
+            if let language = languageImplementation[.babylonian] as? Babylonian {
+                return language.babylonianAllowEmptyColumn
+            } else {
+                return false
+            }
+        }
+        set(newValue) {
+            if let language = languageImplementation[.babylonian] as? Babylonian {
+                return language.babylonianAllowEmptyColumn = newValue
+            }
+        }
+    }
+
+    
+    ///
+    /// Spanish
+    ///
+    public enum SpanishPuntoComa: String, CaseIterable {
+        case coma
+        case punto
+    }
+    
+    public var spanishPuntoComa: SpanishPuntoComa {
+        get {
+            if let language = languageImplementation[.spanish] as? Spanish {
+                return language.spanishPuntoComa
+            } else {
+                return SpanishPuntoComa.coma
+            }
+        }
+        set(newValue) {
+            if let language = languageImplementation[.spanish] as? Spanish {
+                return language.spanishPuntoComa = newValue
+            }
+        }
+    }
+
+
+    ///
+    /// Roman Numerals
+    ///
+    public var romanNumeralsUseVinculum: Bool {
+        get {
+            if let language = languageImplementation[.romanNumerals] as? RomanNumerals {
+                return language.romanNumeralsUseVinculum
+            } else {
+                return false
+            }
+        }
+        set(newValue) {
+            if let language = languageImplementation[.romanNumerals] as? RomanNumerals {
+                return language.romanNumeralsUseVinculum = newValue
+            }
+        }
+    }
     
     /// translate from String
     /// - Parameters:
@@ -288,22 +343,4 @@ open class NumberTranslator {
             }
         }
     }
-}
-
-public protocol GermanParameterProtocol {
-    var germanCapitalisation: Bool { get set }
-}
-
-public protocol BabylonianParameterProtocol {
-    var babylonianAllowEmptyColumn: Bool { get set }
-}
-
-public protocol SpanishParameterProtocol {
-    var spanishPuntoComma: NumberTranslator.SpanishPuntoComma { get set }
-}
-
-public protocol VietnameseParameterProtocol {
-    var vietnameseThousand: NumberTranslator.VietnameseThousand { get set }
-    var vietnameseSecondLast: NumberTranslator.VietnameseSecondLast { get set }
-    var vietnameseCompact: Bool { get set }
 }
