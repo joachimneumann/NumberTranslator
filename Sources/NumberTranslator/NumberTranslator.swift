@@ -75,7 +75,9 @@ open class NumberTranslator {
     /// - Parameter language: language enum
     /// - Returns: String with code
     public func groupSize(_ language: LanguageEnum) -> Int {
-        guard let language = languageImplementation[language] else { return 3 }
+        guard let language = languageImplementation[language] else {
+            return 3
+        }
         return language.groupSize
     }
     

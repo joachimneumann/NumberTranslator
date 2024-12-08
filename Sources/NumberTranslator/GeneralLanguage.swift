@@ -142,7 +142,7 @@ open class GeneralLanguage {
             guard allowNegative else { return "Error: negative not allowed" }
             ret = negativeString + afterNegative + _0_9(0)
         } else {
-            guard let integerPartInt = stringToInt(integerPart) else { return "Error: too large" }
+            guard let integerPartInt = stringToInt(integerPart) else { return "Error: Unable to translate" }
             ret = translate(integerPartInt)
         }
         
@@ -153,7 +153,7 @@ open class GeneralLanguage {
             atTheEnd = exponentString + translate(exponentAsString)
         }
 
-        if ret != "too large", let fractionalPart {
+        if ret != "too large", ret != "Unable to translate", let fractionalPart {
             var count = 0
             ret += beforeAndAfterDotString + dotString
             let withDotLength = integerPart.count + 1

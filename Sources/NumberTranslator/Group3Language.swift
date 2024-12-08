@@ -88,8 +88,8 @@ class Group3Language: GeneralLanguage {
                 return group(exponent, i.E(exponent), below: i.Ex(exponent))
             }
         }
-
-        return "too large"
+        
+        return "Unable to translate"
     }
     
     func group(_ groupIndex: UInt, _ above: UInt, below: UInt) -> String {
